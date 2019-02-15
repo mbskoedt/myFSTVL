@@ -78,12 +78,13 @@ $(document).ready(function() {
   $(".buddy").on("swiperight", function() {
     $(this).addClass('rotate-left').delay(500).fadeOut(2);
     $('.buddy').find('.status').remove();
-
+    $(this).removeClass('active');
     $(this).append('<div class="status like">Like!</div>');
     if ($(this).is(':last-child')) {
       $('.buddy:nth-child(1)').removeClass('rotate-left rotate-right').fadeIn(300);
     } else {
       $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
+      $(this).next().addClass('active');
     }
   });
 
@@ -91,45 +92,16 @@ $(document).ready(function() {
     $(this).addClass('rotate-right').delay(700).fadeOut(1);
     $('.buddy').find('.status').remove();
     $(this).append('<div class="status dislike">Dislike!</div>');
-
+    $(this).removeClass('active');
     if ($(this).is(':last-child')) {
       $('.buddy:nth-child(1)').removeClass('rotate-left rotate-right').fadeIn(300);
       alert('OUPS');
     } else {
       $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
+      $(this).next().addClass('active');
     }
   });
 });
-
-
-
-$('#dislike').on('click', function(event) {
-  console.log('dislike')
-  $(".buddy").addClass('rotate-left').delay(500).fadeOut(2);
-  $('.buddy').find('.status').remove();
-
-  $(".buddy").append('<div class="status like">Like!</div>');
-  if ($(".buddy").is(':last-child')) {
-    $('.buddy:nth-child(1)').removeClass('rotate-left rotate-right').fadeIn(300);
-  } else {
-    $(".buddy").next().removeClass('rotate-left rotate-right').fadeIn(400);
-  }
-});
-$('#like').on('click', function(event) {
-  $(this).addClass('rotate-right').delay(700).fadeOut(1);
-  $('.buddy').find('.status').remove();
-  $(this).append('<div class="status dislike">Dislike!</div>');
-
-  if ($(this).is(':last-child')) {
-    $('.buddy:nth-child(1)').removeClass('rotate-left rotate-right').fadeIn(300);
-    alert('OUPS');
-  } else {
-    $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
-  }
-});
-
-
-
 
 
 fetch('json/artists.json')
@@ -142,14 +114,43 @@ fetch('json/artists.json')
   });
 
 function appendArtists(artists) {
+  let index = 0;
+
   for (let artist of artists) {
     console.log(artist);
-    avatar.innerHTML += `
+    if (index = 0) {
+      container.innerHTML += `
+    <article class="buddy active">
+      <section id="avatar" style="display: block;">
     <iframe class="avatar-video" src="${artist.videourl}"></iframe>
-  </div>
   <h2>${artist.name}</h2>
   <h3><i>${artist.genre}</i></h3>
   <p>${artist.post}</p>
+  </section>
+  </article>
     `;
-  }
+    } else {
+      container.innerHTML += `
+      <article class="buddy inactive">
+        <section id="avatar" style="display: block;">
+      <iframe class="avatar-video" src="${artist.videourl}"></iframe>
+    <h2>${artist.name}</h2>
+    <h3><i>${artist.genre}</i></h3>
+    <p>${artist.post}</p>
+    </section>
+    </article>
+      `;
+    };
+  };
+  index++;
 }
+
+$(".dislike-btn").on("click", function(event) {
+  console.log("Dislike");
+  $(".buddy.active").trigger("swipeleft");
+});
+
+$(".like-btn").on("click", function(event) {
+  console.log("Like");
+  $(".buddy.active").trigger("swiperight");
+});

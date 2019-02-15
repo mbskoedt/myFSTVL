@@ -43,19 +43,16 @@
 
     <div id="container">
 
-      <div class="buddy" style="display: block;">
-        <div id="avatar" style="display: block;">
-        </div>
-        <button onclick="readMore()" id="myBtn">Read more</button>
-        ///////// LIKE KNAP / DISLIKE ////////////
-        <div class="like-dislike">
-          <video id="dislike" onclick="playVidDislike()" width=110px height=118px>
-            <source src="../video/dislike.mp4">
-          </video>
-          <video id="like" onclick="playVidLike()" width=120px height=120px>
-            <source src="../video/its-a-match.mp4">
-          </video>
-        </div>
+    </div>
+    <!-- ///////// LIKE KNAP / DISLIKE //////////// -->
+    <div class="like-dislike">
+      <video class="dislike-btn" id="dislike" onclick="playVidDislike()" width=110px height=118px>
+        <source src="video/dislike.mp4">
+      </video>
+      <video class="like-btn" id="like" onclick="playVidLike()" width=120px height=120px>
+        <source src="video/its-a-match.mp4">
+      </video>
+    </div>
   </section>
 
   <!-- about page -->

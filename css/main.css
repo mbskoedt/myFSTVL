@@ -181,6 +181,14 @@ p {
   background-repeat: no-repeat;
 }
 
+.active {
+  display: block;
+}
+
+.inactive {
+  display: none;
+}
+
 .like {
   border-radius: 5px;
   padding: 5px 10px;
