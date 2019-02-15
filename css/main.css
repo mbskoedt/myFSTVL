@@ -169,8 +169,7 @@ p {
   z-index: 10;
 }
 
-.avatar {
-  background: #222;
+#avatar {
   width: 90%;
   height: auto;
   overflow: hidden;
@@ -180,10 +179,6 @@ p {
   background-size: auto 160% !important;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.avatar-video {
-
 }
 
 .like {

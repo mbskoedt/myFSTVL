@@ -144,15 +144,12 @@ fetch('json/artists.json')
 function appendArtists(artists) {
   for (let artist of artists) {
     console.log(artist);
-    kunstner.innerHTML += `
-    <article class="gridItem">
-    <img src="${artist.imgurl}">
-    <h2>${artist.name}</h2>
-    <p>${artist.genre}</p>
-    <p>${artist.day}</p>
-    <p>${artist.scene}</p>
-    <iframe src="${artist.videourl}"></iframe>
-    <p>${artist.post}</p>
+    avatar.innerHTML += `
+    <iframe class="avatar-video" src="${artist.videourl}"></iframe>
+  </div>
+  <h2>${artist.name}</h2>
+  <h3><i>${artist.genre}</i></h3>
+  <p>${artist.post}</p>
     `;
   }
 }
