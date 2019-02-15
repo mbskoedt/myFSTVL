@@ -19,6 +19,7 @@ html {
 
 body {
   margin: 0;
+  background: grey;
 }
 
 h1 {
@@ -90,7 +91,6 @@ p {
   display: none;
   /*min heigh is screen heigh minus height of tab and top bar */
   min-height: calc(100vh - 110px);
-  background: var(--light-grey);
   animation: fadeIn 0.4s;
   /* padding equals height of tabbar and topbar */
   padding: 55px 0;
@@ -233,4 +233,25 @@ p {
 .like-dislike video {
   margin-left: 4vw;
   margin-right: 4vw;
+}
+
+/* Filtreringsknapper */
+.genre-container, .dag-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.button {
+  width: 30% !important;
+}
+
+.alle {
+  width: 40% !important;
+}
+
+#filter {
+  margin-left: 2%;
+  margin-right: 2%;
 }
