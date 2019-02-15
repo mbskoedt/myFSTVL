@@ -127,3 +127,32 @@ $('#like').on('click', function(event) {
     $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
   }
 });
+
+
+
+
+
+fetch('json/artists.json')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
+    appendArtists(json);
+  });
+
+function appendArtists(artists) {
+  for (let artist of artists) {
+    console.log(artist);
+    kunstner.innerHTML += `
+    <article class="gridItem">
+    <img src="${artist.imgurl}">
+    <h2>${artist.name}</h2>
+    <p>${artist.genre}</p>
+    <p>${artist.day}</p>
+    <p>${artist.scene}</p>
+    <iframe src="${artist.videourl}"></iframe>
+    <p>${artist.post}</p>
+    `;
+  }
+}
