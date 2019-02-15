@@ -1,164 +1,185 @@
-{
-  "artists": [{
-    "name": "Alice in Chains",
-    "genre": ["Rock"],
-    "day": "Torsdag",
-    "scene": "X",
-    "imgurl": "https://static.spin.com/files/130523-alice-in-chains-640x426.jpg",
-    "videourl": "https://youtu.be/a5YMiMNoNHg?t=514"
-  }, {
-    "name": "Cautious Clay",
-    "genre": ["R&B", "Soul"],
-    "day": "Torsdag",
-    "scene": "X",
-    "imgurl": "https://thefader-res.cloudinary.com/private_images/c_limit,w_1024/c_crop,h_526,w_1010,x_13,y_235,f_auto,q_auto:eco/_53A6533_mttxye/_53A6533_mttxye.jpg",
-    "videourl": "https://youtu.be/VERVVrzLSuo?t=17"
-  }, {
-    "name": "Foals",
-    "genre": ["Rock", "Indie rock"],
-    "day": "Torsdag",
-    "scene": "X",
-    "imgurl": "http://www.conversationsabouther.net/wp-content/uploads/2015/10/FOALS-2.jpg",
-    "videourl": "https://youtu.be/W98AAsEf404"
-  }, {
-    "name": "Kaytranada",
-    "genre": ["Hip-Hop", "EDM"],
-    "day": "Torsdag",
-    "scene": "X",
-    "imgurl": "https://s3.amazonaws.com/factmag-images/wp-content/uploads/2016/05/02131614/Kaytranada_photoCarysHuws2a.jpg",
-    "videourl": "https://youtu.be/JjuyV5TEKiI?t=1300"
-  }, {
-    "name": "Khalid",
-    "genre": ["R&B"],
-    "day": "Torsdag",
-    "scene": "X",
-    "imgurl": "https://www.billboard.com/files/styles/article_main_image/public/media/khalid-2018-cr-RoLexx-billboard-1548.jpg",
-    "videourl": "https://youtu.be/KdGQu7JRcXw?t=554"
-  }, {
-    "name": "Tame Impala",
-    "genre": ["Rock", "Pop"],
-    "day": "Torsdag",
-    "scene": "X",
-    "imgurl": "https://m.media-amazon.com/images/M/MV5BZGQxNWZiMmMtZTk3Yi00MjUxLWJjOWUtY2IzYWU1YzZlOTNkXkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_SX1777_CR0,0,1777,998_AL_.jpg",
-    "videourl": "https://youtu.be/qwqX0Vtssvo?t=1296"
-  }, {
-    "name": "The Streets",
-    "genre": ["Hip-Hop"],
-    "day": "Torsdag",
-    "scene": "X",
-    "imgurl": "https://static.gaffa.dk/images/2011/01/05/30c78/66753-860x484.jpg",
-    "videourl": "https://www.youtube.com/watch?v=1F5iWZ3OAQY"
-  }, {
-    "name": "Tove Lo",
-    "genre": ["Pop"],
-    "day": "Torsdag",
-    "scene": "X",
-    "imgurl": "https://i.ytimg.com/vi/gWbZ_KVHK5E/maxresdefault.jpg",
-    "videourl": "https://youtu.be/kGqzodO-Z9A?t=565"
-  }, {
-    "name": "Gnags",
-    "genre": ["Rock"],
-    "day": "Fredag",
-    "scene": "X",
-    "imgurl": "https://static.gaffa.dk/images/2015/02/19/14ea2/176993-860x484.jpeg",
-    "videourl": "https://www.youtube.com/watch?v=BQmj5GTsD6A"
-  }, {
-    "name": "Jada",
-    "genre": ["Pop"],
-    "day": "Fredag",
-    "scene": "X",
-    "imgurl": "https://image.redbull.com/rbcom/052/2018-07-02/0475e7bd-9842-48c7-807d-8a2d66f304e9/0010/1/1500/1000/1/jada-roskilde-festival.png",
-    "videourl": "https://www.youtube.com/watch?v=Xw_SCLTvjUA"
-  }, {
-    "name": "L.O.C.",
-    "genre": ["Hip-Hop"],
-    "day": "Fredag",
-    "scene": "X",
-    "imgurl": "https://static.gaffa.dk/images/2018/11/21/017b7/311057-860x484.jpg",
-    "videourl": "https://www.youtube.com/watch?v=cmWp5VNhEBA"
-  }, {
-    "name": "Lydmor",
-    "genre": ["EDM"],
-    "day": "Fredag",
-    "scene": "X",
-    "imgurl": "http://lydmor.dk/wp-content/uploads/2017/08/cropped-YES-1.jpg",
-    "videourl": "https://www.youtube.com/watch?v=HaFNir_f_qc"
-  }, {
-    "name": "Major Lazer",
-    "genre": ["EDM"],
-    "day": "Fredag",
-    "scene": "X",
-    "imgurl": "https://edm.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTU4NzYxMzU4MzQxNDQ5Mzc3/major-lazer-press-2.jpg",
-    "videourl": "https://youtu.be/2WeeFw3jslg?t=1046"
-  }, {
-    "name": "Migos",
-    "genre": ["Hip-Hop"],
-    "day": "Fredag",
-    "scene": "X",
-    "imgurl": " https://www.billboard.com/files/styles/article_main_image/public/media/migos-press-2017-cr-David-Rams-billboard-1548.jpg",
-    "videourl": "https://www.youtube.com/watch?v=wIKZN5bN-mQ"
-  }, {
-    "name": "New Order",
-    "genre": ["Pop", "EDM"],
-    "day": "Fredag",
-    "scene": "X",
-    "imgurl": "https://ichef.bbci.co.uk/images/ic/960x540/p02y7hlb.jpg",
-    "videourl": "https://youtu.be/tBFqdhBTTY4?t=168"
-  }, {
-    "name": "Bon Iver",
-    "genre": ["Pop", "Indie folk"],
-    "day": "Lørdag",
-    "scene": "X",
-    "imgurl": "https://media.pitchfork.com/photos/592c56615e6ef95969326cec/2:1/w_790/7c3eb0fb.jpg",
-    "videourl": "https://youtu.be/YJNi7aRwUzU?t=190"
-  }, {
-    "name": "First Aid Kit",
-    "genre": ["Indiefolk", "Folkemusik"],
-    "day": "Lørdag",
-    "scene": "X",
-    "imgurl": "http://img2-ak.lst.fm/i/u/arO/92b74237a2174a66ca4058a407bc57ae",
-    "videourl": "https://youtu.be/hPxF1duYHFw?t=54"
-  }, {
-    "name": "Georgia",
-    "genre": ["Pop", "EDM", "Hip-Hop"],
-    "day": "Lørdag",
-    "scene": "X",
-    "imgurl": "https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/6/24/1435153434378/Georgia-009.jpg?width=1920&quality=85&auto=format&fit=max&s=6e66c1d430a447c53e30f8d0706569b6",
-    "videourl": "https://www.youtube.com/watch?v=xwJKnGvKfI0"
-  }, {
-    "name": "Jonah Blacksmith",
-    "genre": ["Rock", "Indie rock"],
-    "day": "Lørdag",
-    "scene": "X",
-    "imgurl": "https://www.limfjordupdate.dk/wp-content/uploads/Jonah-Blacksmith-2.jpg",
-    "videourl": "https://www.youtube.com/watch?v=2sxgCGVYjno"
-  }, {
-    "name": "Kurt Vile & The Violators",
-    "genre": ["Rock", "Indie rock", "Indie folk"],
-    "day": "Lørdag",
-    "scene": "X",
-    "imgurl": "https://media2.fdncms.com/portmerc/imager/u/original/15886857/kurt-vile-and-the-violators.jpg",
-    "videourl": "https://youtu.be/W57a4aM6MhE?t=50"
-  }, {
-    "name": "Peter Sommer & Tiggerne",
-    "genre": ["Pop", "Rock"],
-    "day": "Lørdag",
-    "scene": "X",
-    "imgurl": "https://static.gaffa.dk/images/2017/10/04/33c5f/278816-860x484.jpg",
-    "videourl": "https://www.youtube.com/watch?v=MksMToXG2QQ"
-  }, {
-    "name": "Suspekt",
-    "genre": ["Hip-Hop"],
-    "day": "Lørdag",
-    "scene": "X",
-    "imgurl": "https://ekstrabladet.dk/incoming/article5001566.ece/IMAGE_ALTERNATES/relationBig_910/43535291.jpg",
-    "videourl": "https://www.youtube.com/watch?v=elbSyFtg7Ds"
-  }, {
-    "name": "The Minds of 99",
-    "genre": ["Rock"],
-    "day": "Lørdag",
-    "scene": "X",
-    "imgurl": "http://soundvenue.com/wp-content/uploads/2018/02/Minds7TOP_SamyKhabthani.jpg",
-    "videourl": "https://www.youtube.com/watch?v=HoZYc4WX7EA"
-  }]
-}
+[{
+  "name": "Alice in Chains",
+  "genre": ["Rock"],
+  "day": "Torsdag",
+  "scene": "X",
+  "imgurl": "https://static.spin.com/files/130523-alice-in-chains-640x426.jpg",
+  "videourl": "https://www.youtube.com/embed/a5YMiMNoNHg?start=514",
+  "post": "Seattle-bandet Alice in Chains slog i 90erne sin position fast som et af de fire vigtigste grunge-bands med plader som ”Facelift”, ”Dirt” og ”Jar of Flies”. Desværre betød frontmand Layne Staleys afhængighed af stoffer, at han allerede i 1996 spillede sin sidste koncert med bandet. Efter hans død i 2002 gik der yderligere fire år før Jerry Cantrell, Mike Inez og Sean Kinney efter knap ti års pause allierede sig med sangeren William DuVall og genoplivede bandet."
+}, {
+  "name": "Cautious Clay",
+  "genre": ["R&B", "Soul"],
+  "day": "Torsdag",
+  "scene": "X",
+  "imgurl": "https://thefader-res.cloudinary.com/private_images/c_limit,w_1024/c_crop,h_526,w_1010,x_13,y_235,f_auto,q_auto:eco/_53A6533_mttxye/_53A6533_mttxye.jpg",
+  "videourl": "https://www.youtube.com/embed/VERVVrzLSuo?start=17",
+  "post": "Den amerikanske producer, sangskriver og sanger Josh Karpeh lod sig inspirere af en af historiens største atleter, da det kom tid til at vælge et kunstnernavn. Som Cautious Clay har han fået opmærksomhed via sin version af Toro y Mois ”So Many Details” og efterfølgende EP’en ”Blood Type”, der udkom i foråret 2018."
+}, {
+  "name": "Foals",
+  "genre": ["Rock", "Indie rock"],
+  "day": "Torsdag",
+  "scene": "X",
+  "imgurl": "http://www.conversationsabouther.net/wp-content/uploads/2015/10/FOALS-2.jpg",
+  "videourl": "https://www.youtube.com/embed/W98AAsEf404",
+  "post": "I 2013 gik Foals fra at være en kritikerfavorit til at være et af de mest populære rocknavne i England. Med udgivelsen af ”Holy Fire” sikrede bandet sig for anden gang en nominering til årets Mercury Prize, og både albummet og singlen ”Inhaler” blev kåret som årets bedste af NME, mens Q Magazine kårede dem som Årets Livenavn. Kåringen kom blandt andet efter en fremragende koncert som hovednavn på Glastonbury Festival samme år, og to år senere udråbte Q Magazine Foals som Best Act in the World Today!"
+}, {
+  "name": "Kaytranada",
+  "genre": ["Hip-Hop", "EDM"],
+  "day": "Torsdag",
+  "scene": "X",
+  "imgurl": "https://s3.amazonaws.com/factmag-images/wp-content/uploads/2016/05/02131614/Kaytranada_photoCarysHuws2a.jpg",
+  "videourl": "https://www.youtube.com/embed/JjuyV5TEKiI?start=1300",
+  "post": "Kaytranada har kun et enkelt album i bagagen, men ”99.9%” er i den grad også en stærk udgivelse, hvilket blev understreget, da manden bag, Louis Kevin Celestin, kunne hente både en Polaris Music Prize og en Juno Award for sin debutplade. På albummet fik den canadiske producer hjælp af navne som Craig David, Anderson.Paak, Syd og Little Dragon, der hjalp Kaytranada med at blande sine elektroniske elementer med funk, soul og hiphop."
+}, {
+  "name": "Khalid",
+  "genre": ["R&B"],
+  "day": "Torsdag",
+  "scene": "X",
+  "imgurl": "https://www.billboard.com/files/styles/article_main_image/public/media/khalid-2018-cr-RoLexx-billboard-1548.jpg",
+  "videourl": "https://www.youtube.com/embed/KdGQu7JRcXw?start=554",
+  "post": "Texaneren Khalid medvirkede på atten singler, der ramte den amerikanske Top 100 i 2017 og 2018 inklusive de to kæmpehits ”Eastside (med Benny Blanco og Halsey)” og ”Love Lies”. Sangene følger op på hits som ”Location”, ”Silence” og ”Young, Dumb & Broke”, der alle hver især havde mere end 600.000 streams på Spotify i slutningen af 2018. Den Grammy-nominerede R&B-sanger har sideløbende med hits i eget navn også medvirket på hits for Logic, Marshmello, Calvin Harris, Imagine Dragons og Shawn Mendes."
+}, {
+  "name": "Tame Impala",
+  "genre": ["Rock", "Pop"],
+  "day": "Torsdag",
+  "scene": "X",
+  "imgurl": "https://m.media-amazon.com/images/M/MV5BZGQxNWZiMmMtZTk3Yi00MjUxLWJjOWUtY2IzYWU1YzZlOTNkXkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_SX1777_CR0,0,1777,998_AL_.jpg",
+  "videourl": "https://www.youtube.com/embed/qwqX0Vtssvo?start=1296",
+  "post": "Kevin Parker gik fra anmelder-darling til verdensstjerne, da Tame Impala i 2015 udsendte albummet ”Currents”. Sange som ”Cause I’m a Man”, ”Eventually” og ”The Less I Know the Better” er stadig fast inventar på P6 BEATs playlister, og ”Let It Happen” er lige blevet valgt til en stor reklamekampagne for et amerikansk bilmærke."
+}, {
+  "name": "The Streets",
+  "genre": ["Hip-Hop"],
+  "day": "Torsdag",
+  "scene": "X",
+  "imgurl": "https://static.gaffa.dk/images/2011/01/05/30c78/66753-860x484.jpg",
+  "videourl": "https://www.youtube.com/embed/1F5iWZ3OAQY",
+  "post": "Engelske Mike Skinner var en øjeblikkelig sensation, da han under navnet The Streets i 2001 udsendte singlen ”Has It Come To This?”. Sangen kom fra debutpladen ”Original Pirate Material”, der bød på en unik vinkel på den populære UK Garage-genre. Albummet blev modtaget med flotte anmeldelser og et flot pladesalg både i hjemlandet og det meste af Europa, og med sange som ”Let’s Push Things Forward” og ”Weak Become Heroes” blev The Streets også et populært livenavn."
+}, {
+  "name": "Tove Lo",
+  "genre": ["Pop"],
+  "day": "Torsdag",
+  "scene": "X",
+  "imgurl": "https://i.ytimg.com/vi/gWbZ_KVHK5E/maxresdefault.jpg",
+  "videourl": "https://www.youtube.com/embed/kGqzodO-Z9A?start=565",
+  "post": "Den svenske popstjerne Tove Lo har siden gennembruddet med ”Habits (Stay High)” i 2014 blandet vanvittig fængende pop med provokerende videoer og en klar moderne feministisk tilgang. Dette er tydeligt på hits som ”Talking Body”, ”Cool Girl”, ”Disco Tits” og ”Bitches”, hvor den medrivende electropop både udfordrer og begejstrer."
+}, {
+  "name": "Gnags",
+  "genre": ["Rock"],
+  "day": "Fredag",
+  "scene": "X",
+  "imgurl": "https://static.gaffa.dk/images/2015/02/19/14ea2/176993-860x484.jpeg",
+  "videourl": "https://www.youtube.com/embed/BQmj5GTsD6A",
+  "post": "Et af landets mest populære navne gennem fem årtier lægger i år endelig vejen forbi NorthSide bevæbnet med klassikere som ”Den dejligste morgen”, ”Danmark”, ”Slingrer ned ad Vestergade”, ”Mr. Swing King” og ”Vilde kaniner” og et unikt show lavet til lejligheden."
+}, {
+  "name": "Jada",
+  "genre": ["Pop"],
+  "day": "Fredag",
+  "scene": "X",
+  "imgurl": "https://image.redbull.com/rbcom/052/2018-07-02/0475e7bd-9842-48c7-807d-8a2d66f304e9/0010/1/1500/1000/1/jada-roskilde-festival.png",
+  "videourl": "https://www.youtube.com/embed/Xw_SCLTvjUA",
+  "post": "Jada, med det borgerlige navn Emilie Molsted, har på rekordtid tryllebundet de danske lyttere med sin fængende sangskrivning og sit enorme sangtalent. Allerede før sin officielle debut, florerede der i musikmiljøet mobiloptagelser fra små klubber, der viste et af landets måske største vokaltalenter. Forventningerne var derfor tårnhøje, da Molsted for første gang trådte på scenen som Jada til ’Red Bull Sound Select’ i foråret 2017."
+}, {
+  "name": "L.O.C.",
+  "genre": ["Hip-Hop"],
+  "day": "Fredag",
+  "scene": "X",
+  "imgurl": "https://static.gaffa.dk/images/2018/11/21/017b7/311057-860x484.jpg",
+  "videourl": "https://www.youtube.com/embed/cmWp5VNhEBA",
+  "post": "Liam O'Connor er et af de største navne i dansk musik. Populariteten er vokset støt siden udgivelsen af debutalbummet ”Dominologi” (2001) – og han er den sjældne kombination af kunstner og entertainer, der med en enorm og loyal fanbase både trækker gode anmeldelser og store salgstal på sine udgivelser."
+}, {
+  "name": "Lydmor",
+  "genre": ["EDM"],
+  "day": "Fredag",
+  "scene": "X",
+  "imgurl": "http://lydmor.dk/wp-content/uploads/2017/08/cropped-YES-1.jpg",
+  "videourl": "https://www.youtube.com/embed/HaFNir_f_qc",
+  "post": "Da telefonen ringede hos Jenny Rossander aka Lydmor under NorthSide 2018, var hun ved at gøre sig klar til at rejse til Rusland for at give en koncert i St. Petersborg. Alligevel sagde hun ja til at træde til som erstatning for Susanne Sundfør, og med kun ganske kort tids forberedelse indtog hun Red Stage lørdag aften og leverede en fremragende koncert."
+}, {
+  "name": "Major Lazer",
+  "genre": ["EDM"],
+  "day": "Fredag",
+  "scene": "X",
+  "imgurl": "https://edm.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTU4NzYxMzU4MzQxNDQ5Mzc3/major-lazer-press-2.jpg",
+  "videourl": "https://www.youtube.com/embed/2WeeFw3jslg?start=1046",
+  "post": "Den amerikanske trio Major Lazer med Diplo, Jillionaire og Walshy Fire har stået for nogle af de senere års største hits og har samtidig en ret stor aktie i MØs internationale succes. Sangen ”Lean On (feat. MØ & DJ Snake)” sikrede gruppen platinplader og førstepladser i store dele af verden og med mere end 1,1 milliard afspilninger på Spotify og dobbelt så mange på YouTube, så står Major Lazer i selskab med den danske sangerinde for et af årtiets største hits."
+}, {
+  "name": "Migos",
+  "genre": ["Hip-Hop"],
+  "day": "Fredag",
+  "scene": "X",
+  "imgurl": " https://www.billboard.com/files/styles/article_main_image/public/media/migos-press-2017-cr-David-Rams-billboard-1548.jpg",
+  "videourl": "https://www.youtube.com/embed/wIKZN5bN-mQ",
+  "post": "Atlanta har en af de stærkeste hiphop-scener i verden, og den seneste succeshistorie fra The ATL er trioen Migos. Takeoff, Quavo og Offset har i deres korte karriere allerede stået bag to sensationelle tracks, der har givet dem opmærksomhed langt udenfor det traditionelle hiphop-miljø."
+}, {
+  "name": "New Order",
+  "genre": ["Pop", "EDM"],
+  "day": "Fredag",
+  "scene": "X",
+  "imgurl": "https://ichef.bbci.co.uk/images/ic/960x540/p02y7hlb.jpg",
+  "videourl": "https://www.youtube.com/embed/tBFqdhBTTY4?start=168",
+  "post": "Gennem fire årtier har engelske New Order stået som et af verdens mest indflydelsesrige bands, der har formået at kombinere stribevis af hits og succes blandt kritikere med at inspirere navne som Radiohead, Pet Shop Boys, The Killers, LCD Soundsystem og Arcade Fire. New Order har siden 1981 udsendt mere end 40 singler, og sange som “Blue Monday”, “True Faith”, “World in Motion”, “Regret” og “Crystal” er bare en håndfuld af deres kæmpestore hits, der er klassikere i dag."
+}, {
+  "name": "Bon Iver",
+  "genre": ["Pop", "Indie folk"],
+  "day": "Lørdag",
+  "scene": "X",
+  "imgurl": "https://media.pitchfork.com/photos/592c56615e6ef95969326cec/2:1/w_790/7c3eb0fb.jpg",
+  "videourl": "https://www.youtube.com/embed/YJNi7aRwUzU?start=190",
+  "post": "Amerikanske Justin Vernon udgav i 2007 albummet ”For Emma, Forever Ago” under navnet Bon Iver, og med det startede en meget overraskende raketkarriere, der har gjort den sky Vernon til en Grammy-vindende og millionsælgende artist."
+}, {
+  "name": "First Aid Kit",
+  "genre": ["Indiefolk", "Folkemusik"],
+  "day": "Lørdag",
+  "scene": "X",
+  "imgurl": "http://img2-ak.lst.fm/i/u/arO/92b74237a2174a66ca4058a407bc57ae",
+  "videourl": "https://www.youtube.com/embed/hPxF1duYHFw?start=54",
+  "post": "First Aid Kit har skabt sig en stor fanskare i Danmark, hvor pop, country- og folk-elskere har taget særdeles godt imod den svenske duo, der spillede to forrygende koncerter i januar måned."
+}, {
+  "name": "Georgia",
+  "genre": ["Pop", "EDM", "Hip-Hop"],
+  "day": "Lørdag",
+  "scene": "X",
+  "imgurl": "https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/6/24/1435153434378/Georgia-009.jpg?width=1920&quality=85&auto=format&fit=max&s=6e66c1d430a447c53e30f8d0706569b6",
+  "videourl": "https://www.youtube.com/embed/xwJKnGvKfI0",
+  "post": "Engelske Georgia startede sin musikkarriere som trommeslager for Kate Tempest, men nåede også at synge på Leftfields album ”Alternative Light Source” (Georgia er datter af Neil Barnes fra Leftfield), inden hun i 2015 udsendte sit debutalbum i eget navn."
+}, {
+  "name": "Jonah Blacksmith",
+  "genre": ["Rock", "Indie rock"],
+  "day": "Lørdag",
+  "scene": "X",
+  "imgurl": "https://www.limfjordupdate.dk/wp-content/uploads/Jonah-Blacksmith-2.jpg",
+  "videourl": "https://www.youtube.com/embed/2sxgCGVYjno",
+  "post": "Jonah Blacksmith er et syvmandsensemble med hjerte og rod i Thy. Forkærligheden for de store vidder og den nordatlantiske horisont har sat sine spor i såvel musikken som i menneskene. Og disse mennesker er, ud over brødrene Thomas og Simon Alstrup, fætteren Lasse Alstrup, samt Søren Bigum, Jon Kjeldsen, Søren Poulsen og Thor Kortegaard."
+}, {
+  "name": "Kurt Vile & The Violators",
+  "genre": ["Rock", "Indie rock", "Indie folk"],
+  "day": "Lørdag",
+  "scene": "X",
+  "imgurl": "https://media2.fdncms.com/portmerc/imager/u/original/15886857/kurt-vile-and-the-violators.jpg",
+  "videourl": "https://www.youtube.com/embed/W57a4aM6MhE",
+  "post": "Kurt Vile var i 2003 med til at danne bandet The War on Drugs og fungerede som grundlæggende medlem på bandets debutalbum, og derefter som gæst på ”Slave Ambient”. Samme år som The War on Drugs debuterede, udsendte Kurt Vile også sit første soloalbum og valgte efterfølgende at fokusere på den del af sin karriere."
+}, {
+  "name": "Peter Sommer & Tiggerne",
+  "genre": ["Pop", "Rock"],
+  "day": "Lørdag",
+  "scene": "X",
+  "imgurl": "https://static.gaffa.dk/images/2017/10/04/33c5f/278816-860x484.jpg",
+  "videourl": "https://www.youtube.com/embed/MksMToXG2QQ",
+  "post": "Morten hvor blev du af?"
+}, {
+  "name": "Suspekt",
+  "genre": ["Hip-Hop"],
+  "day": "Lørdag",
+  "scene": "X",
+  "imgurl": "https://ekstrabladet.dk/incoming/article5001566.ece/IMAGE_ALTERNATES/relationBig_910/43535291.jpg",
+  "videourl": "https://www.youtube.com/embed/elbSyFtg7Ds",
+  "post": "Den danske rapgruppe Suspekt har på imponerende vis kombineret det at være provokerende og grænseoverskridende med at nå et bredt publikum, der elsker flabede hits som 'Sut den op fra slap' og 'Bollede hende i går'."
+}, {
+  "name": "The Minds of 99",
+  "genre": ["Rock"],
+  "day": "Lørdag",
+  "scene": "X",
+  "imgurl": "http://soundvenue.com/wp-content/uploads/2018/02/Minds7TOP_SamyKhabthani.jpg",
+  "videourl": "https://www.youtube.com/embed/HoZYc4WX7EA",
+  "post": "Siden The Minds of 99 gæstede NorthSide for første gang i 2014 har bandet flyttet sig fra at give ”en lektion i den energi og gejst, et debuterende band besidder” (Soundvenue) til at være et af landets mest roste og elskede rockbands."
+}]
