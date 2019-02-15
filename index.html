@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>SINGLE PAGE WEB APP TEMPLATE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Get started with HTML, CSS and JavaScript">
+  <meta name="author" content="Rasmus Cederdorff">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+</head>
+
+<body>
+  <!-- tabbar navigation -->
+  <nav class="tabbar">
+    <a href="#home" onclick="showPage('home')" id="hidePage">Home</a>
+    <a href="#trash" onclick="showPage('trash')">
+      <img src="../img/trashcan-dislike.png" alt="skraldespand" width=55%;>
+    </a>
+    <a href="#calender" onclick="showPage('calender')">
+      <img src="../img/calendar-like.png" alt="kalender" width=60%;>
+    </a>
+    <a href="#filter" onclick="showPage('filter')">
+      <img src="../img/filter.png" alt="filter" width=60%;>
+    </a>
+    <a href="#account" onclick="showPage('account')">
+      <img src="../img/account.png" alt="profil" width=60%;>
+    </a>
+  </nav>
+
+  <!-- pages -->
+  <!-- home page -->
+  <section id="home" class="page">
+    <header class="topbar">
+      <h1>myFSTVL</h1>
+    </header>
+    <!--
+    SNIPPET TIL TINDER FUNCTIONALITET:
+    https://codepen.io/developingidea/pen/meAIn -->
+
+    <div id="container">
+
+      <div class="buddy" style="display: block;">
+        <div class="avatar" style="display: block;">
+          <video controls autoplay muted loop class="avatar-video">
+            <source src="../video/lydmor-money-towers.mp4" type="video/mp4">
+          </video>
+        </div>
+        <h2>Lydmor</h2>
+        <h3><i>Elektronisk</i></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est,
+            ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget
+            tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+
+        <button onclick="readMore()" id="myBtn">Read more</button>
+        <!-- ///////// LIKE KNAP / DISLIKE //////////// -->
+        <div class="like-dislike">
+          <video id="dislike" onclick="playVidDislike()" width=110px height=118px>
+            <source src="../video/dislike.mp4">
+          </video>
+          <video id="like" onclick="playVidLike()" width=120px height=120px>
+            <source src="../video/its-a-match.mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="buddy">
+        <div class="avatar" style="display: block;"><video controls autoplay muted loop class="avatar-video">
+            <source src="../video/suspekt-sut-den-op-fra-slap.mp4" type="video/mp4">
+          </video>
+        </div>
+        <h2>Suspekt</h2>
+        <h3><i>HipHop</i></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est,
+            ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget
+            tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+
+        <button onclick="readMore()" id="myBtn">Read more</button>
+        <!-- ///////// LIKE KNAP / DISLIKE //////////// -->
+        <div class="like-dislike">
+          <video id="dislike" onclick="playVidDislike()" width=110px height=118px>
+            <source src="../video/dislike.mp4">
+          </video>
+          <video id="like" onclick="playVidLike()" width=120px height=120px>
+            <source src="../video/its-a-match.mp4">
+          </video>
+        </div>
+      </div>
+      <div class="buddy">
+        <div class="avatar" style="display: block;"><video controls autoplay muted loop class="avatar-video">
+            <source src="../video/lydmor-money-towers.mp4" type="video/mp4">
+          </video>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est,
+            ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget
+            tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+
+        <button onclick="readMore()" id="myBtn">Read more</button>
+        <!-- ///////// LIKE KNAP / DISLIKE //////////// -->
+        <div class="like-dislike">
+            <video id="dislike" onclick="playVidDislike()" width=110px height=118px>
+              <source src="../video/dislike.mp4">
+            </video>
+          <div class="" <video id="like" onclick="playVidLike()" width=120px height=120px>
+            <source src="../video/its-a-match.mp4">
+            </video>
+          </div>
+        </div>
+        <div class="buddy">
+          <div class="avatar" style="display: block;"><video controls autoplay muted loop class="avatar-video">
+              <source src="../video/lydmor-money-towers.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est,
+              ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget
+              tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+
+          <button onclick="readMore()" id="myBtn">Read more</button>
+          <!-- ///////// LIKE KNAP / DISLIKE //////////// -->
+
+          <div class="like-dislike">
+            <video id="dislike" onclick="playVidDislike()" width=110px height=118px>
+              <source src="../video/dislike.mp4">
+            </video>
+            <video id="like" onclick="playVidLike()" width=120px height=120px>
+              <source src="../video/its-a-match.mp4">
+            </video>
+          </div>
+  </section>
+
+  <!-- about page -->
+  <section id="trash" class="page">
+    <header class="topbar">
+      <h1>myFSTVL</h1>
+    </header>
+    <a href="#home">
+      <img src="../img/back-arrow.png" alt="Tilbage Knap" onclick="showPage('home')" width="40px">
+    </a>
+    <h2>Har du fortrudt?</h2>
+  </section>
+
+  <!-- clients page -->
+  <section id="calender" class="page">
+    <header class="topbar">
+      <h1>myFSTVL</h1>
+    </header>
+    <a href="#home">
+      <img src="../img/back-arrow.png" alt="Tilbage Knap" onclick="showPage('home')" width="40px">
+    </a>
+    <h2>Kalender</h2>
+  </section>
+
+  <!-- contact page -->
+  <section id="filter" class="page">
+    <header class="topbar">
+      <h1>myFSTVL</h1>
+    </header>
+    <a href="#home">
+      <img src="../img/back-arrow.png" alt="Tilbage Knap" onclick="showPage('home')" width="40px">
+    </a>
+    <h2>Filter</h2>
+  </section>
+
+  <section id="account" class="page">
+    <header class="topbar">
+      <h1>myFSTVL</h1>
+    </header>
+    <a href="#home">
+      <img src="../img/back-arrow.png" alt="Tilbage Knap" onclick="showPage('home')" width="40px">
+    </a>
+    <h2>Profil</h2>
+  </section>
+
+  <!-- main js file -->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
