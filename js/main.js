@@ -181,10 +181,10 @@ function appendArtists(artists) {
 
 }
 
-
-
 function likePage() {
   let displayLike = document.getElementsByClassName("rotate-left");
 };
 likePage();
 console.log(displayLike);
+
+// Filter funktionen
