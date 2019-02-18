@@ -30,9 +30,16 @@ h1 {
 }
 
 h2,
+ {
+  color: black;
+  font-family: 'Roboto Mono';
+  font-size: 1em;
+}
+
 h3,
 h4 {
-  color: black;
+  font-size: 0.8em;
+  margin-top: -0.8em !important;
 }
 
 p {
@@ -123,7 +130,8 @@ p {
   width: 100vw;
   margin: auto 0 !important;
   display: block;
-  height: 100vh;
+  height: 80vh;
+  padding-top: 10px;
   position: relative;
   list-style-type: none;
   -webkit-touch-callout: none;
@@ -143,7 +151,6 @@ p {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   width: 90%;
   overflow: auto;
-  padding: 1%;
   position: relative;
   cursor: hand;
 }
@@ -183,7 +190,7 @@ p {
 }
 
 .avatar-img {
-  width: 100%;
+  width: 90%;
 }
 
 article.card.active {
