@@ -41,23 +41,6 @@ setDefaultPage();
 
 ////// TINDER CARDS /////////
 
-//// HVIS MERE /////
-function readMore() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
-}
-
 
 ///// KLIK FOR LIKE //////
 var vidDislike = document.getElementById("dislike");
@@ -141,7 +124,6 @@ function fetchArtists() {
 
 function appendArtists(artists) {
   let htmlTemplate = "";
-  console.log(artists);
   for (let i = 0; i < artists.length; i++) {
     let artist = artists[i];
     if (i === 0) {
@@ -151,6 +133,7 @@ function appendArtists(artists) {
              <img class="avatar-img" src="${artist.imgurl}">
            <h2>${artist.name}</h2>
            <h3><i>${artist.genre}</i></h3>
+           <iframe src="${artist.spotify}" width="300" height="80" frameborder="5px" allowtransparency="true" allow="encrypted-media"></iframe>
            <p>${artist.post}</p>
            </section>
            </article>
@@ -162,6 +145,7 @@ function appendArtists(artists) {
              <img class="avatar-img" src="${artist.imgurl}">
            <h2>${artist.name}</h2>
            <h3><i>${artist.genre}</i></h3>
+            <iframe src="${artist.spotify}" width="300" height="80" frameborder="5px" allowtransparency="true" allow="encrypted-media"></iframe>
            <p>${artist.post}</p>
            </section>
            </article>
@@ -171,4 +155,5 @@ function appendArtists(artists) {
   document.querySelector('#swipeContainer').innerHTML = htmlTemplate;
   // add swipe effect after content added
   addSwipeEffect();
+
 }
