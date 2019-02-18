@@ -33,6 +33,26 @@
 
   <!-- pages -->
 
+  <!-- login side -->
+  <section id="login" class="page">
+    <div class="logpa">
+      <div class="indhold">
+        <h1 class="overkrift"> myFSTVL</h1>
+        <h3 class="undertitel"> Log på:</h3>
+        <input type="text" name="E-Mail" placeholder="E-Mail" id="email">
+        <br>
+        <input type="text" name="Password" placeholder="Password" id="password">
+        <button class="loginknap" onclick="saveLocalStorage()"><a href="#valg">Log-In</a></button>
+        <p>eller log på med:</p>
+        <button class="loginBtn loginBtn--facebook">
+          Login med Facebook
+        </button>
+      </div>
+      <a href="#" class="konto">Har du ikke en konto?</a>
+      <a href="#" class="glemt">glemt password?</a>
+    </div>
+  </section>
+
   <!-- vælg festival side -->
   <section id="valg" class="page">
     <h1>Vælg festival</h1>
@@ -57,7 +77,7 @@
       </div>
     </div>
     <button class="arrow">
-      <a href="#filer">&rarr;</a>
+      <a href="#filter">&rarr;</a>
     </button>
   </section>
 
@@ -73,7 +93,7 @@
     <div id="swipeContainer">
 
     </div>
-    
+
     <!--///////// LIKE KNAP / DISLIKE ////////////-->
     <div class="like-dislike">
       <video class="dislike-btn" id="dislike" onclick="playVidDislike(); dislikeButtonEvent();" width=110px height=118px>

@@ -1,5 +1,28 @@
 "use strict";
 
+// login side
+function saveLocalStorage() {
+  let email = document.querySelector("#email").value;
+  console.log(email);
+
+  // store value in local storage
+  localStorage.setItem("email", email);
+  // call loadFromStorage to update displayed values
+  loadFromStorage();
+}
+
+function loadFromStorage() {
+  // get data from local storage
+  let localStorageEmail = localStorage.getItem("email");
+  console.log("localStorageEmail", localStorageEmail);
+
+
+  // set input field with email values from storage
+  document.querySelector('#email').value = localStorageEmail;
+
+}
+loadFromStorage('#email');
+
 // hide all pages
 function hideAllPages() {
   let pages = document.querySelectorAll(".page");
@@ -17,7 +40,7 @@ function showPage(pageId) {
 
 // set default page
 function setDefaultPage() {
-  let page = "home";
+  let page = "login";
   if (location.hash) {
     page = location.hash.slice(1);
   }
