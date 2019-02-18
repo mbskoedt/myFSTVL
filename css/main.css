@@ -116,7 +116,8 @@ p {
   }
 }
 
-/* ---------- TINDE LIKE ----------- */
+/* ---------- TINDE CARDS ----------- */
+
 #swipeContainer {
   background-image: url("../img/background-myfstvl.png");
   width: 100vw;
@@ -179,6 +180,10 @@ p {
   background-size: auto 160% !important;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.avatar-img {
+  width: 100%;
 }
 
 article.card.active {
@@ -245,7 +250,8 @@ article.card.active {
   margin-right: 4vw;
 }
 
-/* Filtreringsknapper */
+/* /////////// Filtreringsknapper /////////// */
+
 .genre-container,
 .dag-container {
   display: flex;

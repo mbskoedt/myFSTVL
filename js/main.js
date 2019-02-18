@@ -148,7 +148,7 @@ function appendArtists(artists) {
       htmlTemplate += `
        <article class="card active" style="display: block;">
                <section id="avatar" style="display: block";>
-             <img class="avatar-video" src="${artist.imgurl}">
+             <img class="avatar-img" src="${artist.imgurl}">
            <h2>${artist.name}</h2>
            <h3><i>${artist.genre}</i></h3>
            <p>${artist.post}</p>
@@ -159,7 +159,7 @@ function appendArtists(artists) {
       htmlTemplate += `
        <article class="card">
                <section id="avatar" style="display: block";>
-             <img class="avatar-video" src="${artist.imgurl}">
+             <img class="avatar-img" src="${artist.imgurl}">
            <h2>${artist.name}</h2>
            <h3><i>${artist.genre}</i></h3>
            <p>${artist.post}</p>
