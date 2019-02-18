@@ -129,7 +129,6 @@ p {
 }
 
 /* ---------- TINDE LIKE ----------- */
-<<<<<<< HEAD
 #swipeContainer {
   background-image: url("../img/background-myfstvl.png");
   width: 100vw;
@@ -162,42 +161,6 @@ p {
 
 .card p {
   margin: 5vw;
-=======
-
-#container {
-    width: 100vw;
-    margin: auto 0 !important;
-    display: block;
-    height: 100vh;
-    position: relative;
-    list-style-type: none;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    text-align: center;
-}
-
-.buddy {
-    display: none;
-    margin-left: auto;
-    margin-right: auto;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    color: #fff;
-    width: 90%;
-    overflow: auto;
-    padding: 5%;
-    position: relative;
-    cursor: hand;
-}
-
-.buddy p {
-    margin: 5vw;
->>>>>>> bc0ec96a04adf1268b960b72f24be8b90b6056d0
 }
 
 .rotate-left {
@@ -219,7 +182,6 @@ p {
 }
 
 #avatar {
-<<<<<<< HEAD
   width: 90%;
   height: 60vh;
   display: block;
@@ -234,17 +196,6 @@ p {
 
 article.card.active {
   background-color: rgba(255,255,255, 0.6);
-=======
-    width: 90%;
-    height: auto;
-    overflow: hidden;
-    display: block;
-    margin-top: 10px;
-    margin-left: 5%;
-    background-size: auto 160% !important;
-    background-position: center;
-    background-repeat: no-repeat;
->>>>>>> bc0ec96a04adf1268b960b72f24be8b90b6056d0
 }
 
 .active {
@@ -291,7 +242,6 @@ article.card.active {
 }
 
 .like-dislike {
-<<<<<<< HEAD
   display: flex;
   justify-content: center;
   background-color: white;
@@ -301,11 +251,6 @@ article.card.active {
   left: 0;
   right: 0;
   z-index: 3;
-=======
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5vh;
->>>>>>> bc0ec96a04adf1268b960b72f24be8b90b6056d0
 }
 
 .like-dislike video {

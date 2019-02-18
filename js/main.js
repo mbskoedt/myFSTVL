@@ -87,7 +87,6 @@ function like(element) {
   $('.card').find('.status').remove();
   $(element).removeClass('active');
   $(element).append('<div class="status like">Like!</div>');
-  $(".avatar-video").each(function () { this.pause() });
   if ($(element).is(':last-child')) {
     $('.card:nth-child(1)').removeClass('rotate-left rotate-right').fadeIn(1000);
     $('.card:nth-child(1)').addClass('active');
@@ -102,7 +101,6 @@ function dislike(element) {
   $('.card').find('.status').remove();
   $(element).removeClass('active');
   $(element).append('<div class="status dislike">Dislike!</div>');
-  $(".avatar-video").each(function () { this.pause() });
   if ($(element).is(':last-child')) {
     $('.card:nth-child(1)').removeClass('rotate-left rotate-right').fadeIn(1000);
     $('.card:nth-child(1)').addClass('active');
@@ -150,7 +148,7 @@ function appendArtists(artists) {
       htmlTemplate += `
        <article class="card active" style="display: block;">
                <section id="avatar" style="display: block";>
-             <iframe class="avatar-video" src="${artist.videourl}"></iframe>
+             <img class="avatar-video" src="${artist.imgurl}">
            <h2>${artist.name}</h2>
            <h3><i>${artist.genre}</i></h3>
            <p>${artist.post}</p>
@@ -161,7 +159,7 @@ function appendArtists(artists) {
       htmlTemplate += `
        <article class="card">
                <section id="avatar" style="display: block";>
-             <iframe class="avatar-video" src="${artist.videourl}"></iframe>
+             <img class="avatar-video" src="${artist.imgurl}">
            <h2>${artist.name}</h2>
            <h3><i>${artist.genre}</i></h3>
            <p>${artist.post}</p>
