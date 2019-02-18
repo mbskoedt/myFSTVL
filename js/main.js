@@ -58,6 +58,7 @@ function readMore() {
   }
 }
 
+
 ///// KLIK FOR LIKE //////
 var vidDislike = document.getElementById("dislike");
 
@@ -74,133 +75,102 @@ function playVidLike() {
 
 //// Swipe function ////
 
-/*
-$(document).ready(function() {
+"use strict";
 
-  $(".buddy.active").on("swiperight", function() {
-    $(this).addClass('rotate-left').delay(500).fadeOut(2);
-    $('.buddy').find('.status').remove();
-    $(this).removeClass('active');
-    $(this).append('<div class="status like">Like!</div>');
-    if ($(this).is(':last-child')) {
-      $('.buddy:nth-child(1)').removeClass('rotate-left rotate-right').fadeIn(300);
-    } else {
-      $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
-      $(this).next().addClass('active');
-    }
-  });
-
-  $(".buddy.active").on("swipeleft", function() {
-    $(this).addClass('rotate-right').delay(700).fadeOut(1);
-    $('.buddy').find('.status').remove();
-    $(this).append('<div class="status dislike">Dislike!</div>');
-    $(this).removeClass('active');
-    if ($(this).is(':last-child')) {
-      $('.buddy:nth-child(1)').removeClass('rotate-left rotate-right').fadeIn(300);
-      alert('OUPS');
-    } else {
-      $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
-      $(this).next().addClass('active');
-    }
-  });
+//make sure that the DOM is loaded and ready
+document.addEventListener("DOMContentLoaded", function() {
+  fetchArtists();
 });
-*/
 
-fetch('json/artists.json')
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(json) {
-    console.log(json);
-    appendArtists(json);
-  });
-
-/*
-function appendArtists(artists) {
-  let index = 0;
-
-    for (let artist of artists) {
-      console.log(artist);
-      if (index == 0) {
-        container.innerHTML += `
-      <article class="buddy active">
-        <section id="avatar" display="block";>
-      <iframe class="avatar-video" src="${artist.videourl}"></iframe>
-    <h2>${artist.name}</h2>
-    <h3><i>${artist.genre}</i></h3>
-    <p>${artist.post}</p>
-    </section>
-    </article>
-      `;
-      } else {
-        container.innerHTML += `
-        <article class="buddy">
-          <section id="avatar">
-        <iframe class="avatar-video" src="${artist.videourl}"></iframe>
-      <h2>${artist.name}</h2>
-      <h3><i>${artist.genre}</i></h3>
-      <p>${artist.post}</p>
-      </section>
-      </article>
-        `;
-      }
-      index++;
-    }
+function like(element) {
+  $(element).addClass('rotate-left').delay(1000).fadeOut(1000);
+  $('.card').find('.status').remove();
+  $(element).removeClass('active');
+  $(element).append('<div class="status like">Like!</div>');
+  $(".avatar-video").each(function () { this.pause() });
+  if ($(element).is(':last-child')) {
+    $('.card:nth-child(1)').removeClass('rotate-left rotate-right').fadeIn(1000);
+    $('.card:nth-child(1)').addClass('active');
+  } else {
+    $(element).next().removeClass('rotate-left rotate-right').fadeIn(1000);
+    $(element).next().addClass('active');
   }
-  */
-function appendArtists(artists) {
-  for (let artist of artists) {
-    console.log(artist);
-    container.innerHTML += `
-    <article class="buddy">
-      <section id="avatar">
-    <iframe class="avatar-video" src="${artist.videourl}"></iframe>
-  <h2>${artist.name}</h2>
-  <h3><i>${artist.genre}</i></h3>
-  <p>${artist.post}</p>
-  </section>
-  </article>
-    `;
-  }
-  swipeEffect();
 }
 
-function swipeEffect() {
+function dislike(element) {
+  $(element).addClass('rotate-right').delay(1000).fadeOut(1000);
+  $('.card').find('.status').remove();
+  $(element).removeClass('active');
+  $(element).append('<div class="status dislike">Dislike!</div>');
+  $(".avatar-video").each(function () { this.pause() });
+  if ($(element).is(':last-child')) {
+    $('.card:nth-child(1)').removeClass('rotate-left rotate-right').fadeIn(1000);
+    $('.card:nth-child(1)').addClass('active');
+    alert('OUPS');
+  } else {
+    $(element).next().removeClass('rotate-left rotate-right').fadeIn(1000);
+    $(element).next().addClass('active');
+  }
+}
 
-  $(".buddy.active").on("swiperight", function() {
-    $(this).addClass('rotate-left').delay(500).fadeOut(2);
-    $('.buddy').find('.status').remove();
-    $(this).removeClass('active');
-    $(this).append('<div class="status like">Like!</div>');
-    if ($(this).is(':last-child')) {
-      $('.buddy:nth-child(1)').removeClass('rotate-left rotate-right').fadeIn(300);
+function likeButtonEvent() {
+  like($('.card.active'));
+}
+
+function dislikeButtonEvent() {
+  dislike($('.card.active'));
+}
+
+function addSwipeEffect() {
+  $(".card").on("swiperight", function() {
+    like(this);
+  });
+
+  $(".card").on("swipeleft", function() {
+    dislike(this);
+  });
+}
+
+function fetchArtists() {
+  fetch("json/artists.json")
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(json) {
+      appendArtists(json);
+    });
+}
+
+function appendArtists(artists) {
+  let htmlTemplate = "";
+  console.log(artists);
+  for (let i = 0; i < artists.length; i++) {
+    let artist = artists[i];
+    if (i === 0) {
+      htmlTemplate += `
+       <article class="card active" style="display: block;">
+               <section id="avatar" style="display: block";>
+             <iframe class="avatar-video" src="${artist.videourl}"></iframe>
+           <h2>${artist.name}</h2>
+           <h3><i>${artist.genre}</i></h3>
+           <p>${artist.post}</p>
+           </section>
+           </article>
+           `;
     } else {
-      $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
-      $(this).next().addClass('active');
+      htmlTemplate += `
+       <article class="card">
+               <section id="avatar" style="display: block";>
+             <iframe class="avatar-video" src="${artist.videourl}"></iframe>
+           <h2>${artist.name}</h2>
+           <h3><i>${artist.genre}</i></h3>
+           <p>${artist.post}</p>
+           </section>
+           </article>
+           `;
     }
-  });
-
-  $(".buddy.active").on("swipeleft", function() {
-    $(this).addClass('rotate-right').delay(700).fadeOut(1);
-    $('.buddy').find('.status').remove();
-    $(this).append('<div class="status dislike">Dislike!</div>');
-    $(this).removeClass('active');
-    if ($(this).is(':last-child')) {
-      $('.buddy:nth-child(1)').removeClass('rotate-left rotate-right').fadeIn(300);
-      alert('OUPS');
-    } else {
-      $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
-      $(this).next().addClass('active');
-    }
-  });
-
-  $(".dislike-btn").on("click", function(event) {
-    console.log("Dislike");
-    $(".buddy.active").trigger("swipeleft");
-  });
-
-  $(".like-btn").on("click", function(event) {
-    console.log("Like");
-    $(".buddy.active").trigger("swiperight");
-  });
+  }
+  document.querySelector('#swipeContainer').innerHTML = htmlTemplate;
+  // add swipe effect after content added
+  addSwipeEffect();
 }

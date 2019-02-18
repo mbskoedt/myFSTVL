@@ -116,7 +116,8 @@ p {
 }
 
 /* ---------- TINDE LIKE ----------- */
-#container {
+#swipeContainer {
+  background-image: url("../img/background-myfstvl.png");
   width: 100vw;
   margin: auto 0 !important;
   display: block;
@@ -132,22 +133,20 @@ p {
   text-align: center;
 }
 
-.buddy {
+.card {
   display: none;
   margin-left: auto;
   margin-right: auto;
-  background: #fff;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  color: #fff;
   width: 90%;
   overflow: auto;
-  padding: 5%;
+  padding: 1%;
   position: relative;
   cursor: hand;
 }
 
-.buddy p {
+.card p {
   margin: 5vw;
 }
 
@@ -171,14 +170,19 @@ p {
 
 #avatar {
   width: 90%;
-  height: auto;
-  overflow: hidden;
+  height: 60vh;
   display: block;
   margin-top: 10px;
+  margin-bottom: 0;
   margin-left: 5%;
   background-size: auto 160% !important;
   background-position: center;
   background-repeat: no-repeat;
+
+}
+
+article.card.active {
+  background-color: rgba(255,255,255, 0.6);
 }
 
 .active {
@@ -227,7 +231,13 @@ p {
 .like-dislike {
   display: flex;
   justify-content: center;
-  margin-bottom: 5vh;
+  background-color: white;
+  margin-bottom: 10vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
 }
 
 .like-dislike video {
