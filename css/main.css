@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
-  font-family: 'Roboto Mono';
+  font-family: 'Roboto Mono' !important;
   font-size: 2em;
   font-weight: 500;
   margin: -1vw;
@@ -48,7 +48,7 @@ p {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 9000;
 }
 
 /* ---------- tabbar styling ---------- */
@@ -58,7 +58,7 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 9000;
   display: flex;
   flex-direction: row;
 }
@@ -273,6 +273,10 @@ article.card.active {
   margin-right: 2%;
 }
 
+#filter p, #filter h2, #filter h3 {
+  text-align: center;
+}
+
 /* Vælg festival */
 .festival-grid {
   display: grid;
@@ -316,18 +320,23 @@ article.card.active {
   margin-top: 20px;
 }
 
-#valg a {
-  text-decoration: none;
-  color: white;
+.arrow a {
+  text-decoration: none !important;
+  color: white !important;
 }
 
 .arrow {
-  font-size: 12vw;
+  font-size: 10vw;
   color: white;
   background-color: black;
   border: 5px solid white;
   border-radius: 50px;
   width: 120px;
+  height: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
 }
 
 /* login side */

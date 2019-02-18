@@ -180,3 +180,5 @@ function appendArtists(artists) {
   addSwipeEffect();
 
 }
+
+// Filter funktion
