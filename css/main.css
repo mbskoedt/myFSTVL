@@ -1,134 +1,126 @@
 /* ---------- root variables ---------- */
-
 :root {
-    --green: rgb(38, 76, 89);
-    --light-green: #6dd4cb;
-    --light-grey: #f1f1f4;
-    --text-color-light: #f1f1f1;
-    --text-color-dark: #333;
+  --green: rgb(38, 76, 89);
+  --light-green: #6dd4cb;
+  --light-grey: #f1f1f4;
+  --text-color-light: #f1f1f1;
+  --text-color-dark: #333;
 }
 
 /* ---------- general styling ---------- */
-
 html {
-    color: var(--text-color-dark);
-    font-family: Helvetica, Arial, sans-serif;
-    height: 100%;
-    text-align: center;
-    width: 100%;
-    font-weight: 200;
+  color: var(--text-color-dark);
+  font-family: Helvetica, Arial, sans-serif;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  font-weight: 200;
 }
 
 body {
-    margin: 0;
-    background: grey;
+  margin: 0;
+  background: grey;
 }
 
 h1 {
-    font-family: 'Roboto Mono';
-    font-size: 2em;
-    font-weight: 500;
-    margin: -1vw;
+  font-family: 'Roboto Mono';
+  font-size: 2em;
+  font-weight: 500;
+  margin: -1vw;
 }
 
 h2,
 h3,
 h4 {
-    color: black;
+  color: black;
 }
 
 p {
-    color: black;
-    text-align: left;
+  color: black;
+  text-align: left;
 }
 
 /* ---------- topbar styling ---------- */
-
 .topbar {
-    background-color: white;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
+  background-color: white;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
 /* ---------- tabbar styling ---------- */
-
 .tabbar {
-    background-color: white;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    display: flex;
-    flex-direction: row;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: row;
 }
 
 #hidePage {
-    display: none;
+  display: none;
 }
 
 /* Style the links inside the navigation bar */
-
 .tabbar a {
-    display: inline-block;
-    text-align: center;
-    padding: 2%;
-    text-decoration: none;
-
+  display: inline-block;
+  text-align: center;
+  padding: 2%;
+  text-decoration: none;
 }
 
 /* Change the color of links on hover */
-
 .tabbar a:hover {
-    background-color: var(--light-grey);
-    color: var(--text-color-dark);
+  background-color: var(--light-grey);
+  color: var(--text-color-dark);
 }
 
 /* Add a color to the active/current link */
-
 .tabbar a.active {
-    background-color: var(--light-green);
-    color: var(--text-color-light);
+  background-color: var(--light-green);
+  color: var(--text-color-light);
 }
 
 /* ---------- page styling ---------- */
-
 .page {
-    display: none;
-    /*min heigh is screen heigh minus height of tab and top bar */
-    min-height: calc(100vh - 110px);
-    animation: fadeIn 0.4s;
-    /* padding equals height of tabbar and topbar */
-    padding: 55px 0;
+  display: none;
+  /*min heigh is screen heigh minus height of tab and top bar */
+  min-height: calc(100vh - 110px);
+  animation: fadeIn 0.4s;
+  /* padding equals height of tabbar and topbar */
+  padding: 55px 0;
 }
 
 /* ---------- logo styling ---------- */
-
 .logo {
-    margin: 2em auto;
-    width: 100%;
-    max-width: 300px;
+  margin: 2em auto;
+  width: 100%;
+  max-width: 300px;
 }
 
 /* ---------- animations ---------- */
-
 /* fade in */
-
 @keyframes fadeIn {
-    from {
-        opacity: 0
-    }
+  from {
+    opacity: 0
+  }
 
-    to {
-        opacity: 1
-    }
+  to {
+    opacity: 1
+  }
 }
 
+<<<<<<< HEAD
 /* ---------- TINDE LIKE ----------- */
+=======
+/* ---------- TINDER LIKE ----------- */
+>>>>>>> d5756e33a4cccfcd91e96aa19597cfcef5a03ea3
 #swipeContainer {
   background-image: url("../img/background-myfstvl.png");
   width: 100vw;
@@ -161,24 +153,62 @@ p {
 
 .card p {
   margin: 5vw;
+<<<<<<< HEAD
+=======
+}
+
+#container {
+  width: 100vw;
+  margin: auto 0 !important;
+  display: block;
+  height: 100vh;
+  position: relative;
+  list-style-type: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+}
+
+.buddy {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  width: 90%;
+  overflow: auto;
+  padding: 5%;
+  position: relative;
+  cursor: hand;
+}
+
+.buddy p {
+  margin: 5vw;
+>>>>>>> d5756e33a4cccfcd91e96aa19597cfcef5a03ea3
 }
 
 .rotate-left {
-    transform: rotate(30deg) scale(0.8);
-    transition: 1s;
-    margin-left: 400px;
-    cursor: e-resize;
-    opacity: 0;
-    z-index: 10;
+  transform: rotate(30deg) scale(0.8);
+  transition: 1s;
+  margin-left: 400px;
+  cursor: e-resize;
+  opacity: 0;
+  z-index: 10;
 }
 
 .rotate-right {
-    transform: rotate(-30deg) scale(0.8);
-    transition: 1s;
-    opacity: 0;
-    margin-left: -400px;
-    cursor: w-resize;
-    z-index: 10;
+  transform: rotate(-30deg) scale(0.8);
+  transition: 1s;
+  opacity: 0;
+  margin-left: -400px;
+  cursor: w-resize;
+  z-index: 10;
 }
 
 #avatar {
@@ -191,58 +221,73 @@ p {
   background-size: auto 160% !important;
   background-position: center;
   background-repeat: no-repeat;
-
 }
 
 article.card.active {
+<<<<<<< HEAD
   background-color: rgba(255,255,255, 0.6);
+=======
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 90%;
+  height: auto;
+  overflow: hidden;
+  display: block;
+  margin-top: 10px;
+  margin-left: 5%;
+  background-size: auto 160% !important;
+  background-position: center;
+  background-repeat: no-repeat;
+>>>>>>> d5756e33a4cccfcd91e96aa19597cfcef5a03ea3
 }
 
 .active {
-    display: block;
+  display: block;
 }
 
 .inactive {
-    display: none;
+  display: none;
 }
 
 .like {
-    border-radius: 5px;
-    padding: 5px 10px;
-    border: 2px solid green;
-    color: green;
-    text-transform: uppercase;
-    font-size: 15px;
-    position: absolute;
-    top: 50px;
-    right: 40px;
-    text-shadow: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 2px solid green;
+  color: green;
+  text-transform: uppercase;
+  font-size: 15px;
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  text-shadow: none;
 }
 
 .dislike {
-    border-radius: 5px;
-    padding: 5px 10px;
-    border: 2px solid red;
-    color: red;
-    text-transform: uppercase;
-    font-size: 15px;
-    position: absolute;
-    top: 50px;
-    left: 40px;
-    text-shadow: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 2px solid red;
+  color: red;
+  text-transform: uppercase;
+  font-size: 15px;
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  text-shadow: none;
 }
 
 #more {
-    display: none;
+  display: none;
 }
 
 #myBtn {
-    border: none;
-    background-color: white;
+  border: none;
+  background-color: white;
 }
 
 .like-dislike {
+<<<<<<< HEAD
   display: flex;
+=======
+>>>>>>> d5756e33a4cccfcd91e96aa19597cfcef5a03ea3
   justify-content: center;
   background-color: white;
   margin-bottom: 10vh;
@@ -254,88 +299,85 @@ article.card.active {
 }
 
 .like-dislike video {
-    margin-left: 4vw;
-    margin-right: 4vw;
+  margin-left: 4vw;
+  margin-right: 4vw;
 }
 
 /* Filtreringsknapper */
-
 .genre-container,
 .dag-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .button {
-    width: 30% !important;
+  width: 30% !important;
 }
 
 .alle {
-    width: 40% !important;
+  width: 40% !important;
 }
 
 #filter {
-    margin-left: 2%;
-    margin-right: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 /* Vælg festival */
-
 .festival-grid {
-    display: grid;
-    grid-template-columns: 9% 40% 2% 40% 9%;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: 9% 40% 2% 40% 9%;
+  margin-top: 20px;
 }
 
 .festival-grid img {
-    width: 90%;
-    background-color: white;
-    padding: 5%;
-
+  width: 90%;
+  background-color: white;
+  padding: 5%;
 }
 
 .festival-grid img:hover {
-    border: 5px solid #6dd4cb;
+  border: 5px solid #6dd4cb;
 }
 
 .festival-grid div {
-    width: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .roskilde,
 .musik-i-lejet,
 .tinderbox {
-    grid-column: 2 / 2;
-    margin-bottom: 10px;
+  grid-column: 2 / 2;
+  margin-bottom: 10px;
 }
 
 .northside,
 .smukfest,
 .copenhell {
-    grid-column: 4 / 4;
-    margin-bottom: 10px;
+  grid-column: 4 / 4;
+  margin-bottom: 10px;
 }
 
 .valg {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .valg a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .arrow {
-    font-size: 12vw;
-    color: white;
-    background-color: black;
-    border: 5px solid white;
-    border-radius: 50px;
-    width: 120px;
+  font-size: 12vw;
+  color: white;
+  background-color: black;
+  border: 5px solid white;
+  border-radius: 50px;
+  width: 120px;
 }
