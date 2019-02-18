@@ -116,11 +116,7 @@ p {
   }
 }
 
-<<<<<<< HEAD
 /* ---------- TINDE LIKE ----------- */
-=======
-/* ---------- TINDER LIKE ----------- */
->>>>>>> d5756e33a4cccfcd91e96aa19597cfcef5a03ea3
 #swipeContainer {
   background-image: url("../img/background-myfstvl.png");
   width: 100vw;
@@ -153,44 +149,6 @@ p {
 
 .card p {
   margin: 5vw;
-<<<<<<< HEAD
-=======
-}
-
-#container {
-  width: 100vw;
-  margin: auto 0 !important;
-  display: block;
-  height: 100vh;
-  position: relative;
-  list-style-type: none;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  text-align: center;
-}
-
-.buddy {
-  display: none;
-  margin-left: auto;
-  margin-right: auto;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  color: #fff;
-  width: 90%;
-  overflow: auto;
-  padding: 5%;
-  position: relative;
-  cursor: hand;
-}
-
-.buddy p {
-  margin: 5vw;
->>>>>>> d5756e33a4cccfcd91e96aa19597cfcef5a03ea3
 }
 
 .rotate-left {
@@ -224,20 +182,7 @@ p {
 }
 
 article.card.active {
-<<<<<<< HEAD
   background-color: rgba(255,255,255, 0.6);
-=======
-  background-color: rgba(255, 255, 255, 0.6);
-  width: 90%;
-  height: auto;
-  overflow: hidden;
-  display: block;
-  margin-top: 10px;
-  margin-left: 5%;
-  background-size: auto 160% !important;
-  background-position: center;
-  background-repeat: no-repeat;
->>>>>>> d5756e33a4cccfcd91e96aa19597cfcef5a03ea3
 }
 
 .active {
@@ -284,10 +229,7 @@ article.card.active {
 }
 
 .like-dislike {
-<<<<<<< HEAD
   display: flex;
-=======
->>>>>>> d5756e33a4cccfcd91e96aa19597cfcef5a03ea3
   justify-content: center;
   background-color: white;
   margin-bottom: 10vh;
@@ -363,12 +305,12 @@ article.card.active {
   margin-bottom: 10px;
 }
 
-.valg {
+#valg {
   text-align: center;
   margin-top: 20px;
 }
 
-.valg a {
+#valg a {
   text-decoration: none;
   color: white;
 }
