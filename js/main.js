@@ -141,7 +141,7 @@ function fetchArtists() {
       return response.json();
     })
     .then(function(json) {
-      appendArtists(json);
+      appendArtists(json.artists);
     });
 }
 
@@ -181,4 +181,10 @@ function appendArtists(artists) {
 
 }
 
-// Filter funktion
+
+
+function likePage() {
+  let displayLike = document.getElementsByClassName("rotate-left");
+};
+likePage();
+console.log(displayLike);
