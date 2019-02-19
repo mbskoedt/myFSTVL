@@ -14,11 +14,13 @@ html {
   text-align: center;
   width: 100%;
   font-weight: 200;
+    
 }
 
 body {
   margin: 0;
   background: grey;
+    
     
 }
 
@@ -27,6 +29,7 @@ h1 {
   font-size: 2em;
   font-weight: 500;
   margin: -1vw;
+   
 }
 
 
@@ -38,6 +41,7 @@ h2,
   color: black;
   font-family: 'Roboto';
   font-size: 1em;
+     text-shadow: none !important;
 }
 
 h3,
@@ -45,12 +49,14 @@ h4 {
   font-family: 'Roboto Mono' !important;
   font-size: 0.8em;
   margin-top: -0.8em !important;
+    text-shadow: none !important;
 }
 
 p {
   color: black;
   text-align: left;
   font-family: 'Roboto mono' sans-serif !important;
+    text-shadow: none !important;
 }
 
 /* ---------- topbar styling ---------- */
@@ -62,6 +68,7 @@ p {
   left: 0;
   right: 0;
   z-index: 9000;
+    text-shadow: none !important;
 }
 
 /* ---------- tabbar styling ---------- */
@@ -572,6 +579,7 @@ margin-left: 23% !important;
 
     margin-bottom: 20px;
     font-size: 7vw;
+    text-shadow: none !important;
 }
 
 #account h3{
@@ -624,12 +632,14 @@ margin-left: 23% !important;
 #account button a{
     color: white;
     text-decoration: none;
+    
 
 }
 
 .password{
     font-size: 3.5vw;
-    color:#ACACAC !important;
+    color:#032936 !important;
+    text-shadow: none;
 }
 
 
