@@ -42,7 +42,7 @@
         <input type="text" name="E-Mail" placeholder="E-Mail" id="email">
         <br>
         <input type="text" name="Password" placeholder="Password" id="password">
-        <button class="loginknap" onclick="saveLocalStorage()"><a href="#valg">Log-In</a></button>
+        <button class="loginknap" onclick="saveLocalStorage()"><a href="#valg" onclick="showPage('valg')">Log-In</a></button>
         <p>eller log på med:</p>
         <button class="loginBtn loginBtn--facebook">
           Login med Facebook
@@ -76,8 +76,8 @@
         <img src="img/copenhell.png" alt="Copenhell">
       </div>
     </div>
-    <button class="arrow">
-      <a href="#filter">&rarr;</a>
+    <button href="#filter" onclick="showPage('filter')" class="arrow">
+      <a href="#filter" onclick="showPage('filter')" href="#filter">&rarr;</a>
     </button>
   </section>
 
@@ -146,16 +146,16 @@
       <button class="button">Indie</button>
       <button class="button">Pop</button>
       <button class="button">Rock</button>
-      <button class="button">R&B</button>
+      <button class="button">R&amp;B</button>
     </div>
-    <button class="button alle">Alle genre</button>
-    <h3>Dage:</h3>
+    <button class="button alle" onclick="showPage('home')">Alle genre</button>
+    <!--<h3>Dage:</h3>
     <div class="dag-container">
       <button class="button">Torsdag</button>
       <button class="button">Fredag</button>
       <button class="button">Lørdag</button>
     </div>
-    <button class="button alle">Alle dage</button>
+    <button class="button alle" onclick="showPage('home')">Alle dage</button>-->
     <div class="arrow">
       <a href="#home" onclick="showPage('home')">&rarr;</a>
     </div>
