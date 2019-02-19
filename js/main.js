@@ -16,6 +16,7 @@ function saveLocalStorage() {
 
 }
 
+/*
 function loadFromStorage() {
   // hent data fra lokal
   let localStorageEmail = localStorage.getItem("email");
@@ -36,7 +37,7 @@ function loadFromStorage() {
 
 loadFromStorage();
 
-
+*/
 
 // hide all pages
 function hideAllPages() {
