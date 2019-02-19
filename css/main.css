@@ -19,7 +19,7 @@ html {
 body {
   margin: 0;
   background: grey;
-    
+
 }
 
 h1 {
@@ -135,6 +135,7 @@ p {
   margin: 20px;
   width: 10%;
 }
+
 
 /* ---------- TINDER CARDS ----------- */
 
@@ -278,6 +279,8 @@ article.card.active {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .button {
@@ -286,15 +289,15 @@ article.card.active {
 
 .alle {
   width: 40% !important;
+  margin-left: 5% !important;
 }
 
 #filter {
-  margin-left: 2%;
-  margin-right: 2%;
+
 }
 
 .top-tekst {
-  margin-top: 100px;
+  margin-top: 12vh;
 }
 
 
@@ -303,16 +306,16 @@ article.card.active {
 }
 
 #filter .arrow {
-  margin-bottom: 20px;
+  margin-top: 3vh;
 }
 
 /* //////// KALENDER //////// */
-
+/*
 #likeGridContainer {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 100%;
 }
-
+*/
 #likedGridContainer .card {
   display: block !important;
 }
@@ -433,7 +436,7 @@ article.card.active {
 
 .indhold h3 {
   text-align: left !important;
-  
+
   text-decoration: underline !important;
   font-size: 6vw !important;
   font-weight: 100 !important;
