@@ -14,8 +14,8 @@
   // hent data fra lokal
   let localStorageEmail = localStorage.getItem("email");
   console.log("localStorageEmail", localStorageEmail);
-  
-  
+
+
   // sæt værdi i indput felt til værdi i lokal
   document.querySelector('#email').value = localStorageEmail;
   document.querySelector('#email2').value = localStorageEmail;
@@ -208,4 +208,12 @@ function printDislikedArtists() {
     document.getElementById('dislikeGridContainer').appendChild(disartist);
   }
   console.log(printThis);
+}
+
+function addClass(elem) {
+  let knap = document.getElementsByClassName('button');
+  for (i = 0; i < button.length; i++) {
+    knap[i].classList.remove('addblue')
+  }
+  elem.classList.add('addblue');
 }

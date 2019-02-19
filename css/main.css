@@ -10,7 +10,6 @@
 /* ---------- general styling ---------- */
 html {
   color: var(--text-color-dark);
-  font-family: Helvetica, Arial, sans-serif;
   height: 100%;
   text-align: center;
   width: 100%;
@@ -38,6 +37,7 @@ h2,
 
 h3,
 h4 {
+  font-family: 'Roboto Mono' !important;
   font-size: 0.8em;
   margin-top: -0.8em !important;
 }
@@ -45,6 +45,7 @@ h4 {
 p {
   color: black;
   text-align: left;
+  font-family: 'Roboto' sans-serif !important;
 }
 
 /* ---------- topbar styling ---------- */
@@ -286,6 +287,14 @@ article.card.active {
   margin-right: 2%;
 }
 
+.top-tekst {
+  margin-top: 100px;
+}
+
+#filter h1 {
+  font-family: 'Roboto Mono' !important;
+}
+
 #filter p, #filter h2, #filter h3 {
   text-align: center;
 }
@@ -365,7 +374,7 @@ article.card.active {
 }
 
 #valg h1{
-    font-family: roboto !important;
+    font-family: 'Roboto' !important;
     font-size: 12vw;
 }
 
@@ -415,7 +424,7 @@ article.card.active {
   font-size: 15vw !important;
   font-weight: 100 !important;
   margin-top: 0 !important;
-    font-family: 'roboto' !important;
+    font-family: 'Roboto' !important;
     text-shadow: none;
     background-color: transparent !important;
     margin-bottom:30px;
@@ -428,12 +437,12 @@ article.card.active {
   font-size: 6vw !important;
   font-weight: 100 !important;
   color: #032936 !important;
-  font-family: lucida sans !important;
+  font-family: 'Roboto Mono' !important;
   font-weight: 700 !important;
 }
 
 .indhold p {
-  font-family: lucida sans !important;
+  font-family: 'Roboto' !important;
   font-size: 3.5vw !important;
     text-align: center;
 }
@@ -442,7 +451,7 @@ article.card.active {
   width: 80% !important;
   display: block !important;
   margin-left: 10% !important;
-  font-family: Lucida Sans !important;
+  font-family: 'Roboto' !important;
   font-size: 6vw !important;
   font-weight: 100 !important;
   border: none !important;
@@ -461,7 +470,7 @@ article.card.active {
   border-radius: 50px !important;
   color: white !important;
   background-color: #032936 !important;
-  font-family: lucida sans !important;
+  font-family: 'Roboto' !important;
   width: 60% !important;
      margin-left: 20% !important;
 
@@ -470,7 +479,7 @@ article.card.active {
 .loginknap a {
   color: white;
   background-color: #032936 !important;
-  font-family: lucida sans !important;
+  font-family: 'Roboto' !important;
   font-size: 5.5vw !important;
   text-decoration: none !important;
     width: 60% !important;
@@ -484,7 +493,7 @@ article.card.active {
   bottom: 3% !important;
   right: 2% !important;
   font-size: 3.3vw !important;
-  font-family: lucida sans !important;
+  font-family: 'Roboto' !important;
   margin: 0 !important;
   color: #032936 !important;
   text-decoration: none !important;
@@ -495,7 +504,7 @@ article.card.active {
   bottom:3%  !important;
   left: 2%!important;
   font-size: 3.3vw !important;
-  font-family: lucida sans !important;
+  font-family: 'Roboto' !important;
   margin: 0 !important;
   color: #032936 !important;
   text-decoration: none !important;
@@ -558,3 +567,11 @@ width:53% !important;
 
 
 
+
+.addblue {
+  background-color: blue;
+}
+
+.button:focus {
+  background-color: #6dd4cb !important;
+}
