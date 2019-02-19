@@ -19,19 +19,24 @@ html {
 body {
   margin: 0;
   background: grey;
+    
 }
 
 h1 {
-  font-family: 'Roboto Mono' !important;
+  font-family: 'Roboto' !important;
   font-size: 2em;
   font-weight: 500;
   margin: -1vw;
 }
 
+
+
+
+
 h2,
  {
   color: black;
-  font-family: 'Roboto Mono';
+  font-family: 'Roboto';
   font-size: 1em;
 }
 
@@ -45,7 +50,7 @@ h4 {
 p {
   color: black;
   text-align: left;
-  font-family: 'Roboto' sans-serif !important;
+  font-family: 'Roboto mono' sans-serif !important;
 }
 
 /* ---------- topbar styling ---------- */
@@ -291,9 +296,6 @@ article.card.active {
   margin-top: 100px;
 }
 
-#filter h1 {
-  font-family: 'Roboto Mono' !important;
-}
 
 #filter p, #filter h2, #filter h3 {
   text-align: center;
@@ -372,7 +374,7 @@ article.card.active {
 }
 
 #valg h1{
-    font-family: 'Roboto Mono' !important;
+    font-family: 'Roboto' !important;
     font-size: 12vw;
 }
 
@@ -422,7 +424,7 @@ article.card.active {
   font-size: 15vw !important;
   font-weight: 100 !important;
   margin-top: 0 !important;
-    font-family: 'Roboto Mono' !important;
+    font-family: 'Roboto' !important;
     text-shadow: none;
     background-color: transparent !important;
     margin-bottom:30px;
@@ -430,12 +432,12 @@ article.card.active {
 
 .indhold h3 {
   text-align: left !important;
-  margin-left: 10% !important;
+  
   text-decoration: underline !important;
   font-size: 6vw !important;
   font-weight: 100 !important;
   color: #032936 !important;
-  font-family: 'Roboto Mono' !important;
+  font-family: 'Roboto' !important;
   font-weight: 700 !important;
 }
 
@@ -470,7 +472,7 @@ article.card.active {
   background-color: #032936 !important;
   font-family: 'Roboto' !important;
   width: 60% !important;
-     margin-left: 20% !important;
+    margin-left: 20% !important;
 
 }
 
