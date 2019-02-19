@@ -260,12 +260,11 @@ article.card.active {
 }
 
 .like-dislike {
-  display: flex;
   justify-content: center;
   background-color: white;
-  margin-bottom: 10vh;
+  margin-bottom: 17%;
   position: fixed;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
   right: 0;
   z-index: 3;
@@ -274,6 +273,7 @@ article.card.active {
 .like-dislike video {
   margin-left: 4vw;
   margin-right: 4vw;
+
 }
 
 /* /////////// Filtreringsknapper /////////// */
@@ -645,7 +645,7 @@ margin-left: 23% !important;
 .dinfestival{
     width:60px;
     padding: 5px;
-    background-color: #6DD4CB;
+    background-color: #032936;
     margin-bottom: 20px;
 
 }
