@@ -42,7 +42,7 @@
         <input type="text" name="E-Mail" placeholder="E-Mail" id="email">
         <br>
         <input type="text" name="Password" placeholder="Password" id="password">
-        <button class="loginknap" onclick="saveLocalStorage()"><a href="#valg">Log-In</a></button>
+        <button class="loginknap" onclick="saveLocalStorage()"><a href="#valg" onclick="showPage('valg')">Log-In</a></button>
         <p>eller log på med:</p>
         <button class="loginBtn loginBtn--facebook">
           Login med Facebook
@@ -76,8 +76,8 @@
         <img src="img/copenhell.png" alt="Copenhell">
       </div>
     </div>
-    <button class="arrow">
-      <a href="#filter">&rarr;</a>
+    <button href="#home" onclick="showPage('home')" class="arrow">
+      <a href="#home" onclick="showPage('home')" href="#filter">&rarr;</a>
     </button>
   </section>
 
