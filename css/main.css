@@ -19,7 +19,7 @@ html {
 body {
   margin: 0;
   background: grey;
-    
+
 }
 
 h1 {
@@ -432,7 +432,7 @@ article.card.active {
 
 .indhold h3 {
   text-align: left !important;
-  
+
   text-decoration: underline !important;
   font-size: 6vw !important;
   font-weight: 100 !important;
@@ -640,9 +640,5 @@ margin-left: 23% !important;
 
 
 .addblue {
-  background-color: blue;
-}
-
-.button:focus {
-  background-color: #6dd4cb !important;
+  background-color: blue !important;
 }

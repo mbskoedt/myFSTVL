@@ -1,5 +1,7 @@
 "use strict";
 
+let artists = [];
+
 // login side
 function saveLocalStorage() {
   let email = document.querySelector("#email").value;
@@ -46,6 +48,9 @@ function showPage(pageId) {
   hideAllPages();
   document.querySelector(`#${pageId}`).style.display = "block";
   setActiveTab(pageId);
+  if (pageId == "home") {
+    appendArtists(artists);
+  }
 }
 
 // set default page
@@ -151,14 +156,34 @@ function fetchArtists() {
       return response.json();
     })
     .then(function(json) {
+      artists = json.artists;
       appendArtists(json.artists);
     });
 }
 
 function appendArtists(artists) {
+  let buttons = document.querySelectorAll(".button.addblue");
+  let filteredArtists = [];
+  for (let button of buttons) {
+    console.log(button.innerText);
+    let genre = button.innerText;
+    for (let artist of artists) {
+      artist.genre.includes(genre);
+      if (artist.genre.includes(genre)) {
+        filteredArtists.push(artist);
+      }
+    }
+  }
+  console.log(filteredArtists);
+  let artistsToShow = [];
+  if (filteredArtists.length > 0) {
+    artistsToShow = filteredArtists;
+  } else {
+    artistsToShow = artists;
+  }
   let htmlTemplate = "";
-  for (let i = 0; i < artists.length; i++) {
-    let artist = artists[i];
+  for (let i = 0; i < artistsToShow.length; i++) {
+    let artist = artistsToShow[i];
     if (i === 0) {
       htmlTemplate += `
        <article class="card active" style="display: block;">
@@ -218,10 +243,18 @@ function printDislikedArtists() {
   console.log(printThis);
 }
 
-function addClass(elem) {
-  let knap = document.getElementsByClassName('button');
-  for (i = 0; i < button.length; i++) {
-    knap[i].classList.remove('addblue')
-  }
-  elem.classList.add('addblue');
+let buttons = document.querySelectorAll(".button");
+console.log(buttons);
+
+for (let button of buttons) {
+  button.addEventListener("click", function(elem) {
+    console.log(elem);
+    console.log(elem.target.innerText);
+    console.log(elem.target.classList.contains('addblue'));
+    if (elem.target.classList.contains('addblue')) {
+      elem.target.classList.remove('addblue');
+    } else {
+      elem.target.classList.add('addblue');
+    }
+  });
 }
