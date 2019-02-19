@@ -403,14 +403,20 @@ article.card.active {
   text-align: center !important;
   height: 100vh !important;
   position: fixed !important;
-    top:-55px !important;
-    z-index: 99999;
-    background-color: white;
-
-
+     top:0;
+    z-index:99999;
 
 
 }
+
+.baggrund{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 10000;
+}
+
+
 
 .indhold {
   position: absolute !important;
