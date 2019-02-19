@@ -180,17 +180,6 @@ function appendArtists(artists) {
   addSwipeEffect();
 }
 
-<<<<<<< HEAD
-/*
-function showLikedArtists() {
-  let htmlGrid;
-  let likedArtists = document.getElementsByClassName("rotate-left");
-  htmlGrid += likedArtists;
-  console.log(likedArtists);
-  document.querySelector('#likeGridContainer').innerHTML = htmlGrid;
-}
-*/
-
 function printLikedArtists() {
   { // caution: drop the "new Array" part or it won't work!
     let likedArtists = document.getElementsByClassName("rotate-left");
@@ -203,12 +192,3 @@ function printLikedArtists() {
   }
   document.getElementById('likeGridContainer').innerHTML = showLikedArtists();
 }
-=======
-function likePage() {
-  let displayLike = document.getElementsByClassName("rotate-left");
-};
-likePage();
-console.log(displayLike);
-
-// Filter funktionen
->>>>>>> 12073e2597234edc4d123a8be2315267f23e83cf
