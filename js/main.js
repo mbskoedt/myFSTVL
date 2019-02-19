@@ -1,27 +1,29 @@
 "use strict";
 
 // login side
-function saveLocalStorage() {
+    function saveLocalStorage() {
   let email = document.querySelector("#email").value;
   console.log(email);
 
-  // store value in local storage
+  // gem data lokalt under email
   localStorage.setItem("email", email);
   // call loadFromStorage to update displayed values
-  loadFromStorage();
-}
 
-function loadFromStorage() {
-  // get data from local storage
+}
+    function loadFromStorage() {
+  // hent data fra lokal
   let localStorageEmail = localStorage.getItem("email");
   console.log("localStorageEmail", localStorageEmail);
-
-
-  // set input field with email values from storage
+  
+  
+  // sæt værdi i indput felt til værdi i lokal
   document.querySelector('#email').value = localStorageEmail;
-
+  document.querySelector('#email2').value = localStorageEmail;
 }
-loadFromStorage('#email');
+
+loadFromStorage();
+
+
 
 // hide all pages
 function hideAllPages() {
