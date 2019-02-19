@@ -405,7 +405,7 @@ article.card.active {
 .logpa {
   width: 100% !important;
   text-align: center !important;
-  height: 109vh !important;
+  height: 100vh !important;
   position: fixed !important;
     top:-55px !important;
     z-index: 99999;
