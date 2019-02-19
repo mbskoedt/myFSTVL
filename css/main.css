@@ -293,17 +293,37 @@ article.card.active {
   margin-left: 5% !important;
 }
 
-#filter {
+#filter h3 {
+    font-family: 'lucida sans' !important;
+    text-decoration: underline;
+    font-size: 6vw;    
+    margin-bottom:10px;  
+    
 
 }
 
 .top-tekst {
-  margin-top: 12vh;
+  margin-top: 78px;
+    text-shadow:none;
+    font-family: 'roboto';
+    
+}
+
+#filter p{
+    margin-top:0px;
+    position: relative;
+    margin-bottom: 30px;
+    font-family: 'lucida sans';
+    color:white;
+    font-weight:00;
+    font-size: 5vw;
+    
 }
 
 
 #filter p, #filter h2, #filter h3 {
   text-align: center;
+    
 }
 
 #filter .arrow {
@@ -582,6 +602,7 @@ margin-left: 23% !important;
 }
 
 #account h2{
+    font-family: 'roboto';
 
     margin-bottom: 20px;
     font-size: 7vw;
@@ -589,10 +610,11 @@ margin-left: 23% !important;
 }
 
 #account h3{
+    font-family: 'roboto' !important;
     font-size: 4vw;
     text-decoration: underline;
     margin: 10px 0px;
-    padding-top:10px
+    padding-top:15px
 
 
 }
@@ -614,8 +636,6 @@ margin-left: 23% !important;
 }
 
 #account input{
-    margin: 5px 0px;
-
     height: 20px !important;
 }
 
