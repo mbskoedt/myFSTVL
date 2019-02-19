@@ -305,11 +305,9 @@ article.card.active {
 
 /* //////// KALENDER //////// */
 
-.likeGridContainer {
+#likeGridContainer {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-gap: 10px;
-  padding: 10px;
 }
 
 #likedGridContainer .card {
@@ -374,7 +372,7 @@ article.card.active {
 }
 
 #valg h1{
-    font-family: 'Roboto' !important;
+    font-family: 'Roboto Mono' !important;
     font-size: 12vw;
 }
 
@@ -412,7 +410,7 @@ article.card.active {
   top: 45% !important;
   left: 50% !important;
   transform: translate(-50%, -50%) !important;
-  width: 100% !important;
+  width: 90% !important;
 
 
 
@@ -424,7 +422,7 @@ article.card.active {
   font-size: 15vw !important;
   font-weight: 100 !important;
   margin-top: 0 !important;
-    font-family: 'Roboto' !important;
+    font-family: 'Roboto Mono' !important;
     text-shadow: none;
     background-color: transparent !important;
     margin-bottom:30px;
@@ -524,8 +522,8 @@ article.card.active {
   border-radius: 0.2em !important;
   font-size: 12px !important;
   color: #FFF !important;
-width:53% !important;
-    margin-left: 23.5% !important;
+width:54% !important;
+margin-left: 23% !important;
 }
 
 .loginBtn:before {
@@ -562,6 +560,77 @@ width:53% !important;
 
 
 /* /////// MIN PROFIL SITE /////// */
+
+#account{
+    position: relative;
+}
+
+#account h2{
+
+    margin-bottom: 20px;
+    font-size: 7vw;
+}
+
+#account h3{
+    font-size: 4vw;
+    text-decoration: underline;
+    margin: 10px 0px;
+    padding-top:10px
+
+
+}
+
+.profilindhold{
+    position: absolute;
+    width:80%;
+    margin-left:10%;
+    top:16%;
+    text-align: left;
+}
+
+.dinfestival{
+    width:60px;
+    padding: 5px;
+    background-color: #6DD4CB;
+    margin-bottom: 20px;
+
+}
+
+#account input{
+    margin: 5px 0px;
+
+    height: 20px !important;
+}
+
+
+#account button{
+      color: white;
+  background-color: #032936 !important;
+  font-family: lucida sans !important;
+  font-size: 4.5vw !important;
+  text-decoration: none !important;
+    width: 60% !important;
+    text-shadow: none !important;
+    color:white !important;
+    left:20%;
+    border-radius: 50px;
+    margin-top: 20px;
+
+}
+
+#account button a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.password{
+    font-size: 3.5vw;
+    color:#ACACAC !important;
+}
+
+
+
 
 
 

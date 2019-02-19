@@ -41,7 +41,7 @@
         <h3 class="undertitel"> Log på:</h3>
         <input type="text" name="E-Mail" placeholder="E-Mail" id="email">
         <br>
-        <input type="text" name="Password" placeholder="Password" id="password">
+        <input type="password" name="Password" placeholder="Password" id="password">
         <button class="loginknap" onclick="saveLocalStorage()"><a href="#valg" onclick="showPage('valg')">Log-In</a></button>
         <p>eller log på med:</p>
         <button class="loginBtn loginBtn--facebook">
@@ -168,15 +168,19 @@
     <a href="#home">
       <img src="../img/back-arrow.png" alt="Tilbage Knap" class="tilbage-knap" onclick="showPage('home')" width="40px">
     </a>
-    <h1>Min  profil</h1>
-    <h3>Mine festivaler</h3>
-    <img src="img/northside.png" alt="northside festival logo">
-    <h3>E-mail:</h3>
-    <input type="text" name="E-Mail" placeholder="E-Mail" id="email2">
-    <h3>Password</h3>
-    <input type="text" name="Password" placeholder="Password" id="password">
-    <p class="password">Skift Password</p>
+    <div class="profilindhold">
+      <h2>Min profil</h2>
+
+      <h3>Mine festivaler</h3>
+      <img src="img/northside.png" alt="northside festival logo" class="dinfestival">
+      <h3>E-mail:</h3>
+      <input type="text" name="E-Mail" placeholder="E-Mail" id="email2">
+      <h3>Password</h3>
+      <input type="password" name="Password" placeholder="Password" id="password2">
+      <a href="#" class="password">Skift Password</a>
       <button class="logudknap"><a href="#login" onclick="showPage('login')">Log-ud</a></button>
+    </div>
+
 
   </section>
 
