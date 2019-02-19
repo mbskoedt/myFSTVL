@@ -3,14 +3,14 @@
 
 <head>
   <meta charset="utf-8">
-  <title>myFSTVL</title>
+  <title>SINGLE PAGE WEB APP TEMPLATE</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="myFSTVL webapp matcher dig med ny musik, du ikke ved du elsker">
+  <meta name="author" content="Christian Plovst, Emilie Genz, Lasse Skov og Matias Skødt">
   <link rel="stylesheet" href="css/main.css">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 </head>
 
 <body>
@@ -18,16 +18,16 @@
   <nav class="tabbar">
     <a href="#home" onclick="showPage('home')" id="hidePage">Home</a>
     <a href="#trash" onclick="showPage('trash'); printDislikedArtists();">
-      <img src="../img/trashcan-dislike.png" alt="skraldespand" width=55%;>
+      <img src="img/trashcan-dislike.png" alt="skraldespand" width=55%;>
     </a>
     <a href="#calender" onclick="showPage('calender'); printLikedArtists();">
-      <img src="../img/calendar-like.png" alt="kalender" width=60%;>
+      <img src="img/calendar-like.png" alt="kalender" width=60%;>
     </a>
     <a href="#filter" onclick="showPage('filter')">
-      <img src="../img/filter.png" alt="filter" width=60%;>
+      <img src="img/filter.png" alt="filter" width=60%;>
     </a>
     <a href="#account" onclick="showPage('account')">
-      <img src="../img/account.png" alt="profil" width=60%;>
+      <img src="img/account.png" alt="profil" width=60%;>
     </a>
   </nav>
 
@@ -38,11 +38,10 @@
     <div class="logpa">
       <div class="indhold">
         <h1 class="overkrift"> myFSTVL</h1>
-        <br>
         <h3 class="undertitel"> Log på:</h3>
         <input type="text" name="E-Mail" placeholder="E-Mail" id="email">
         <br>
-        <input type="password" name="Password" placeholder="Password" id="password">
+        <input type="text" name="Password" placeholder="Password" id="password">
         <button class="loginknap" onclick="saveLocalStorage()"><a href="#valg" onclick="showPage('valg')">Log-In</a></button>
         <p>eller log på med:</p>
         <button class="loginBtn loginBtn--facebook">
@@ -50,7 +49,7 @@
         </button>
       </div>
       <a href="#" class="konto">Har du ikke en konto?</a>
-      <a href="#" class="glemt">Glemt password?</a>
+      <a href="#" class="glemt">glemt password?</a>
     </div>
   </section>
 
@@ -112,7 +111,7 @@
       <h1>Har du fortrudt?</h1>
     </header>
     <a href="#home">
-      <img src="../img/back-arrow.png" alt="Tilbage Knap" class="tilbage-knap" onclick="showPage('home')" width="40px">
+      <img src="img/back-arrow.png" alt="Tilbage Knap" class="tilbage-knap" onclick="showPage('home')" width="40px">
     </a>
     <div id="dislikeGridContainer">
     </div>
@@ -124,7 +123,7 @@
       <h1>Kalender</h1>
     </header>
     <a href="#home">
-      <img src="../img/back-arrow.png" alt="Tilbage Knap" class="tilbage-knap" onclick="showPage('home')" width="40px">
+      <img src="img/back-arrow.png" alt="Tilbage Knap" class="tilbage-knap" onclick="showPage('home')" width="40px">
     </a>
     <div id="likeGridContainer">
     </div>
@@ -135,21 +134,21 @@
       <h1>Filter</h1>
     </header>
     <a href="#home">
-      <img src="../img/back-arrow.png" alt="Tilbage Knap" class="tilbage-knap" onclick="showPage('home')" width="40px">
+      <img src="img/back-arrow.png" alt="Tilbage Knap" class="tilbage-knap" onclick="showPage('home')" width="40px">
     </a>
-    <h2 class="top-tekst">Indstil dine filtre til netop din musiksmag</h2>
+    <p>Indstil dine filtre til netop din musiksmag</p>
     <p>Festival:</p>
     <p><b>Northside</b></p>
     <h3>Genre:</h3>
     <div class="genre-container">
-      <button class="button" onlick="addClass(this)">EDM</button>
-      <button class="button" onlick="addClass(this)">Hip-Hop</button>
-      <button class="button" onlick="addClass(this)">Indie</button>
-      <button class="button" onlick="addClass(this)">Pop</button>
-      <button class="button" onlick="addClass(this)">Rock</button>
-      <button class="button" onlick="addClass(this)">R&amp;B</button>
+      <button class="button">EDM</button>
+      <button class="button">Hip-Hop</button>
+      <button class="button">Indie</button>
+      <button class="button">Pop</button>
+      <button class="button">Rock</button>
+      <button class="button">R&amp;B</button>
     </div>
-    <button class="button alle">Alle genre</button>
+    <button class="button alle" onclick="showPage('home')">Alle genre</button>
     <!--<h3>Dage:</h3>
     <div class="dag-container">
       <button class="button">Torsdag</button>
@@ -167,21 +166,17 @@
       <h1>Profil</h1>
     </header>
     <a href="#home">
-      <img src="../img/back-arrow.png" alt="Tilbage Knap" class="tilbage-knap" onclick="showPage('home')" width="40px">
+      <img src="img/back-arrow.png" alt="Tilbage Knap" class="tilbage-knap" onclick="showPage('home')" width="40px">
     </a>
-    <div class="profilindhold">
-      <h2>Min profil</h2>
-
-      <h3>Mine festivaler</h3>
-      <img src="img/northside.png" alt="northside festival logo" class="dinfestival">
-      <h3>E-mail:</h3>
-      <input type="text" name="E-Mail" placeholder="E-Mail" id="email2">
-      <h3>Password</h3>
-      <input type="password" name="Password" placeholder="Password" id="password2">
-      <a href="#" class="password">Skift Password</a>
+    <h1>Min  profil</h1>
+    <h3>Mine festivaler</h3>
+    <img src="img/northside.png" alt="northside festival logo">
+    <h3>E-mail:</h3>
+    <input type="text" name="E-Mail" placeholder="E-Mail" id="email2">
+    <h3>Password</h3>
+    <input type="text" name="Password" placeholder="Password" id="password">
+    <p class="password">Skift Password</p>
       <button class="logudknap"><a href="#login" onclick="showPage('login')">Log-ud</a></button>
-    </div>
-
 
   </section>
 
