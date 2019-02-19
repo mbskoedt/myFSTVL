@@ -3,14 +3,14 @@
 
 <head>
   <meta charset="utf-8">
-  <title>SINGLE PAGE WEB APP TEMPLATE</title>
+  <title>myFSTVL</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Get started with HTML, CSS and JavaScript">
-  <meta name="author" content="Rasmus Cederdorff">
+  <meta name="description" content="">
+  <meta name="author" content="">
   <link rel="stylesheet" href="css/main.css">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
 </head>
 
 <body>
@@ -137,19 +137,19 @@
     <a href="#home">
       <img src="../img/back-arrow.png" alt="Tilbage Knap" class="tilbage-knap" onclick="showPage('home')" width="40px">
     </a>
-    <p>Indstil dine filtre til netop din musiksmag</p>
+    <h2 class="top-tekst">Indstil dine filtre til netop din musiksmag</h2>
     <p>Festival:</p>
     <p><b>Northside</b></p>
     <h3>Genre:</h3>
     <div class="genre-container">
-      <button class="button">EDM</button>
-      <button class="button">Hip-Hop</button>
-      <button class="button">Indie</button>
-      <button class="button">Pop</button>
-      <button class="button">Rock</button>
-      <button class="button">R&amp;B</button>
+      <button class="button" onlick="addClass(this)">EDM</button>
+      <button class="button" onlick="addClass(this)">Hip-Hop</button>
+      <button class="button" onlick="addClass(this)">Indie</button>
+      <button class="button" onlick="addClass(this)">Pop</button>
+      <button class="button" onlick="addClass(this)">Rock</button>
+      <button class="button" onlick="addClass(this)">R&amp;B</button>
     </div>
-    <button class="button alle" onclick="showPage('home')">Alle genre</button>
+    <button class="button alle">Alle genre</button>
     <!--<h3>Dage:</h3>
     <div class="dag-container">
       <button class="button">Torsdag</button>
@@ -170,22 +170,22 @@
       <img src="../img/back-arrow.png" alt="Tilbage Knap" class="tilbage-knap" onclick="showPage('home')" width="40px">
     </a>
     <div class="profilindhold">
-    <h2>Min  profil</h2>
-    
-    <h3>Mine festivaler</h3>
-    <img src="img/northside.png" alt="northside festival logo" class="dinfestival">
-    <h3>E-mail:</h3>
-    <input type="text" name="E-Mail" placeholder="E-Mail" id="email2">
-    <h3>Password</h3>
-    <input type="password" name="Password" placeholder="Password" id="password2">
-    <a href ="#" class="password">Skift Password</a>
+      <h2>Min profil</h2>
+
+      <h3>Mine festivaler</h3>
+      <img src="img/northside.png" alt="northside festival logo" class="dinfestival">
+      <h3>E-mail:</h3>
+      <input type="text" name="E-Mail" placeholder="E-Mail" id="email2">
+      <h3>Password</h3>
+      <input type="password" name="Password" placeholder="Password" id="password2">
+      <a href="#" class="password">Skift Password</a>
       <button class="logudknap"><a href="#login" onclick="showPage('login')">Log-ud</a></button>
-        </div>
-      
-    
+    </div>
+
+
   </section>
-  
-  
+
+
 
   <!-- main js file -->
   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
