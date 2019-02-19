@@ -3,10 +3,12 @@
 // login side
     function saveLocalStorage() {
   let email = document.querySelector("#email").value;
+    let password = document.querySelector('#password').value;
   console.log(email);
 
   // gem data lokalt under email
   localStorage.setItem("email", email);
+    localStorage.setItem("password", password);    
   // call loadFromStorage to update displayed values
 
 }
@@ -15,10 +17,15 @@
   let localStorageEmail = localStorage.getItem("email");
   console.log("localStorageEmail", localStorageEmail);
   
+let localStoragePassword = localStorage.getItem("password");
+        console.log("localStoragePassword", localStoragePassword);
   
   // sæt værdi i indput felt til værdi i lokal
   document.querySelector('#email').value = localStorageEmail;
   document.querySelector('#email2').value = localStorageEmail;
+   document.querySelector('#password').value = localStoragePassword;
+    document.querySelector('#password2').value = localStoragePassword;
+        
 }
 
 loadFromStorage();
