@@ -3,6 +3,7 @@
 let artists = [];
 
 // login side
+
 function saveLocalStorage() {
   let email = document.querySelector("#email").value;
   let password = document.querySelector('#password').value;
@@ -30,6 +31,8 @@ function loadFromStorage() {
   document.querySelector('#password2').value = localStoragePassword;
 
 }
+
+
 
 loadFromStorage();
 

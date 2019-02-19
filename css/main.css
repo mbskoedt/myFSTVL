@@ -14,30 +14,27 @@ html {
   text-align: center;
   width: 100%;
   font-weight: 200;
+
 }
 
 body {
   margin: 0;
   background: grey;
-
 }
 
 h1 {
   font-family: 'Roboto' !important;
   font-size: 2em;
   font-weight: 500;
-  margin: -1vw;
+  margin: -1vw;   
 }
-
-
-
-
 
 h2,
  {
   color: black;
   font-family: 'Roboto';
   font-size: 1em;
+     text-shadow: none !important;
 }
 
 h3,
@@ -45,12 +42,14 @@ h4 {
   font-family: 'Roboto Mono' !important;
   font-size: 0.8em;
   margin-top: -0.8em !important;
+    text-shadow: none !important;
 }
 
 p {
   color: black;
   text-align: left;
   font-family: 'Roboto mono' sans-serif !important;
+    text-shadow: none !important;
 }
 
 /* ---------- topbar styling ---------- */
@@ -62,6 +61,7 @@ p {
   left: 0;
   right: 0;
   z-index: 9000;
+    text-shadow: none !important;
 }
 
 /* ---------- tabbar styling ---------- */
@@ -102,6 +102,7 @@ p {
 
 /* ---------- page styling ---------- */
 .page {
+  background-image: url("../img/background-myfstvl.png");
   display: none;
   /*min heigh is screen heigh minus height of tab and top bar */
   min-height: calc(100vh - 110px);
@@ -134,6 +135,7 @@ p {
   margin: 20px;
   width: 10%;
 }
+
 
 /* ---------- TINDER CARDS ----------- */
 
@@ -277,6 +279,8 @@ article.card.active {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .button {
@@ -285,15 +289,15 @@ article.card.active {
 
 .alle {
   width: 40% !important;
+  margin-left: 5% !important;
 }
 
 #filter {
-  margin-left: 2%;
-  margin-right: 2%;
+
 }
 
 .top-tekst {
-  margin-top: 100px;
+  margin-top: 12vh;
 }
 
 
@@ -302,16 +306,16 @@ article.card.active {
 }
 
 #filter .arrow {
-  margin-bottom: 20px;
+  margin-top: 3vh;
 }
 
 /* //////// KALENDER //////// */
-
+/*
 #likeGridContainer {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 100%;
 }
-
+*/
 #likedGridContainer .card {
   display: block !important;
 }
@@ -361,7 +365,7 @@ article.card.active {
   position: fixed ;
     z-index: 99999;
     background-color: white;
-    background-image: url(/img/background-myfstvl.png);
+    background-image: url(../img/background-myfstvl.png);
     text-shadow:none;
 
 
@@ -396,7 +400,7 @@ article.card.active {
 .logpa {
   width: 100% !important;
   text-align: center !important;
-  height: 109vh !important;
+  height: 100vh !important;
   position: fixed !important;
     top:-55px !important;
     z-index: 99999;
@@ -571,6 +575,7 @@ margin-left: 23% !important;
 
     margin-bottom: 20px;
     font-size: 7vw;
+    text-shadow: none !important;
 }
 
 #account h3{
@@ -624,11 +629,13 @@ margin-left: 23% !important;
     color: white;
     text-decoration: none;
 
+
 }
 
 .password{
     font-size: 3.5vw;
-    color:#ACACAC !important;
+    color:#032936 !important;
+    text-shadow: none;
 }
 
 
