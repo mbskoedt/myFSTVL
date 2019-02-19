@@ -26,7 +26,7 @@ h1 {
   font-family: 'Roboto' !important;
   font-size: 2em;
   font-weight: 500;
-  margin: -1vw;   
+  margin: -1vw;
 }
 
 h2,
@@ -647,5 +647,5 @@ margin-left: 23% !important;
 
 
 .addblue {
-  background-color: blue !important;
+  background-color: #3ac8c8 !important;
 }
