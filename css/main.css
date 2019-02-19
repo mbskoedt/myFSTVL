@@ -27,6 +27,7 @@ h1 {
   font-size: 2em;
   font-weight: 500;
   margin: -1vw;
+    color:#032936;
 }
 
 
@@ -36,6 +37,7 @@ h2,
   font-family: 'Roboto';
   font-size: 1em;
      text-shadow: none !important;
+     
 }
 
 h3,
@@ -163,11 +165,13 @@ p {
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   width: 90%;
+    text-shadow: none;
   overflow: auto;
   position: relative;
   cursor: hand;
+    color:#032936;
 }
 
 .card p {
@@ -286,6 +290,7 @@ article.card.active {
 
 .button {
   width: 30% !important;
+    color:#032936 !important;;
 }
 
 .alle {
@@ -294,18 +299,25 @@ article.card.active {
 }
 
 #filter h3 {
-    font-family: 'lucida sans' !important;
+    font-family: 'roboto' !important;
     text-decoration: underline;
     font-size: 6vw;    
     margin-bottom:10px;  
-    
+    font-weight: 100;
+    color:#032936;
 
+}
+
+.mellem{
+    margin-top: 25px !important;
 }
 
 .top-tekst {
   margin-top: 78px;
     text-shadow:none;
     font-family: 'roboto';
+    color:#032936;
+    font-weight:100;
     
 }
 
@@ -382,8 +394,8 @@ article.card.active {
 #valg {
   width: 100% ;
   text-align: center;
-  height: 100vh;
-  position: fixed ;
+  position: relative;
+    
     z-index: 99999;
     background-color: white;
     background-image: url(../img/background-myfstvl.png);
@@ -411,10 +423,10 @@ article.card.active {
 }
 
 .arrow {
-  font-size: 11vw !important;
+  font-size: 8vw !important;
     padding:1% !important;
   color: white;
-  border: 5px solid white;
+  border: 2px solid white;
 }
 
 /* login side */
@@ -466,7 +478,7 @@ article.card.active {
 }
 
 .indhold h3 {
-  text-align: left !important;
+  
 
   text-decoration: underline !important;
   font-size: 6vw !important;
@@ -606,17 +618,19 @@ margin-left: 23% !important;
     font-family: 'roboto';
 
     margin-bottom: 20px;
-    font-size: 7vw;
+    font-size: 9vw;
     text-shadow: none !important;
+    margin-top: 15px;
+    color:#032936;
 }
 
 #account h3{
     font-family: 'roboto' !important;
-    font-size: 4vw;
+    font-size: 6vw;
     text-decoration: underline;
     margin: 10px 0px;
-    padding-top:15px
-
+    padding-top:15px;
+    color:#032936;
 
 }
 
@@ -636,9 +650,7 @@ margin-left: 23% !important;
 
 }
 
-#account input{
-    height: 20px !important;
-}
+
 
 
 #account button{
