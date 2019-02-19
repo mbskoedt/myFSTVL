@@ -97,6 +97,7 @@ p {
 
 /* ---------- page styling ---------- */
 .page {
+  background-image: url("../img/background-myfstvl.png");
   display: none;
   /*min heigh is screen heigh minus height of tab and top bar */
   min-height: calc(100vh - 110px);
