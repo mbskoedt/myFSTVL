@@ -20,7 +20,7 @@
     <a href="#trash" onclick="showPage('trash')">
       <img src="../img/trashcan-dislike.png" alt="skraldespand" width=55%;>
     </a>
-    <a href="#calender" onclick="showPage('calender')">
+    <a href="#calender" onclick="showPage('calender'); printLikedArtists();">
       <img src="../img/calendar-like.png" alt="kalender" width=60%;>
     </a>
     <a href="#filter" onclick="showPage('filter')">
@@ -125,6 +125,8 @@
       <img src="../img/back-arrow.png" alt="Tilbage Knap" onclick="showPage('home')" width="40px">
     </a>
     <h2>Kalender</h2>
+    <div id="likeGridContainer">
+    </div>
   </section>
 
   <section id="filter" class="page">

@@ -178,13 +178,27 @@ function appendArtists(artists) {
   document.querySelector('#swipeContainer').innerHTML = htmlTemplate;
   // add swipe effect after content added
   addSwipeEffect();
-
 }
 
+/*
+function showLikedArtists() {
+  let htmlGrid;
+  let likedArtists = document.getElementsByClassName("rotate-left");
+  htmlGrid += likedArtists;
+  console.log(likedArtists);
+  document.querySelector('#likeGridContainer').innerHTML = htmlGrid;
+}
+*/
 
-
-function likePage() {
-  let displayLike = document.getElementsByClassName("rotate-left");
-};
-likePage();
-console.log(displayLike);
+function printLikedArtists() {
+  { // caution: drop the "new Array" part or it won't work!
+    let likedArtists = document.getElementsByClassName("rotate-left");
+    console.log(likedArtists);
+    let printThis = "";
+    for (let i = 0; i < likedArtists.length; i++) {
+      printThis += likedArtists[i];
+    }
+    return printThis; // <-- to be printed to the div
+  }
+  document.getElementById('likeGridContainer').innerHTML = showLikedArtists();
+}

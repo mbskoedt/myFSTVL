@@ -284,6 +284,15 @@ article.card.active {
   text-align: center;
 }
 
+/* //////// KALENDER //////// */
+
+.likeGridContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
 /* Vælg festival */
 .festival-grid {
   display: grid;
