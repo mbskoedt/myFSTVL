@@ -180,6 +180,7 @@ function appendArtists(artists) {
   addSwipeEffect();
 }
 
+<<<<<<< HEAD
 /*
 function showLikedArtists() {
   let htmlGrid;
@@ -202,3 +203,12 @@ function printLikedArtists() {
   }
   document.getElementById('likeGridContainer').innerHTML = showLikedArtists();
 }
+=======
+function likePage() {
+  let displayLike = document.getElementsByClassName("rotate-left");
+};
+likePage();
+console.log(displayLike);
+
+// Filter funktionen
+>>>>>>> 12073e2597234edc4d123a8be2315267f23e83cf
