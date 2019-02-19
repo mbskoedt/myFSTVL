@@ -14,7 +14,7 @@ html {
   text-align: center;
   width: 100%;
   font-weight: 200;
-    
+
 }
 
 body {
@@ -27,11 +27,7 @@ h1 {
   font-size: 2em;
   font-weight: 500;
   margin: -1vw;
-   
 }
-
-
-
 
 
 h2,
@@ -407,14 +403,23 @@ article.card.active {
   text-align: center !important;
   height: 100vh !important;
   position: fixed !important;
-    top:-55px !important;
-    z-index: 99999;
-    background-color: white;
-
-
+     top:0;
+    z-index:99999;
 
 
 }
+
+.baggrund{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 10000;
+    width: 100vh; 
+    height:100vh;
+    
+}
+
+
 
 .indhold {
   position: absolute !important;
@@ -633,7 +638,7 @@ margin-left: 23% !important;
 #account button a{
     color: white;
     text-decoration: none;
-    
+
 
 }
 
@@ -652,9 +657,5 @@ margin-left: 23% !important;
 
 
 .addblue {
-  background-color: blue;
-}
-
-.button:focus {
-  background-color: #6dd4cb !important;
+  background-color: #3ac8c8 !important;
 }
