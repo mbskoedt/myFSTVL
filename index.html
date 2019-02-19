@@ -17,7 +17,7 @@
   <!-- tabbar navigation -->
   <nav class="tabbar">
     <a href="#home" onclick="showPage('home')" id="hidePage">Home</a>
-    <a href="#trash" onclick="showPage('trash')">
+    <a href="#trash" onclick="showPage('trash'); printDislikedArtists();">
       <img src="../img/trashcan-dislike.png" alt="skraldespand" width=55%;>
     </a>
     <a href="#calender" onclick="showPage('calender'); printLikedArtists();">
@@ -108,35 +108,34 @@
   <!-- about page -->
   <section id="trash" class="page">
     <header class="topbar">
-      <h1>myFSTVL</h1>
+      <h1>Har du fortrudt?</h1>
     </header>
     <a href="#home">
-      <img src="../img/back-arrow.png" alt="Tilbage Knap" onclick="showPage('home')" width="40px">
+      <img src="../img/back-arrow.png" alt="Tilbage Knap" class="tilbage-knap" onclick="showPage('home')" width="40px">
     </a>
-    <h2>Har du fortrudt?</h2>
+    <div id="dislikeGridContainer">
+    </div>
   </section>
 
   <!-- clients page -->
   <section id="calender" class="page">
     <header class="topbar">
-      <h1>myFSTVL</h1>
+      <h1>Kalender</h1>
     </header>
     <a href="#home">
-      <img src="../img/back-arrow.png" alt="Tilbage Knap" onclick="showPage('home')" width="40px">
+      <img src="../img/back-arrow.png" alt="Tilbage Knap" class="tilbage-knap" onclick="showPage('home')" width="40px">
     </a>
-    <h2>Kalender</h2>
     <div id="likeGridContainer">
     </div>
   </section>
 
   <section id="filter" class="page">
     <header class="topbar">
-      <h1>myFSTVL</h1>
+      <h1>Filter</h1>
     </header>
     <a href="#home">
-      <img src="../img/back-arrow.png" alt="Tilbage Knap" onclick="showPage('home')" width="40px">
+      <img src="../img/back-arrow.png" alt="Tilbage Knap" class="tilbage-knap" onclick="showPage('home')" width="40px">
     </a>
-    <h2>Filtrer</h2>
     <p>Indstil dine filtre til netop din musiksmag</p>
     <p>Festival:</p>
     <p><b>Northside</b></p>
@@ -164,10 +163,10 @@
 
   <section id="account" class="page">
     <header class="topbar">
-      <h1>myFSTVL</h1>
+      <h1>Profil</h1>
     </header>
     <a href="#home">
-      <img src="../img/back-arrow.png" alt="Tilbage Knap" onclick="showPage('home')" width="40px">
+      <img src="../img/back-arrow.png" alt="Tilbage Knap" class="tilbage-knap" onclick="showPage('home')" width="40px">
     </a>
     <h2>Profil</h2>
   </section>

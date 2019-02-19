@@ -181,14 +181,29 @@ function appendArtists(artists) {
 }
 
 function printLikedArtists() {
-  { // caution: drop the "new Array" part or it won't work!
-    let likedArtists = document.getElementsByClassName("rotate-left");
-    console.log(likedArtists);
-    let printThis = "";
-    for (let i = 0; i < likedArtists.length; i++) {
-      printThis += likedArtists[i];
-    }
-    return printThis; // <-- to be printed to the div
+  // caution: drop the "new Array" part or it won't work!
+  let likedArtists = document.querySelectorAll(".rotate-left");
+  console.log(likedArtists);
+  let printThis = "";
+  for (let i = 0; i < likedArtists.length; i++) {
+    let artist = likedArtists[i];
+    artist.classList.remove("rotate-left");
+    artist.style.display = "block";
+    document.getElementById('likeGridContainer').appendChild(artist);
   }
-  document.getElementById('likeGridContainer').innerHTML = showLikedArtists();
+  console.log(printThis);
+}
+
+function printDislikedArtists() {
+  // caution: drop the "new Array" part or it won't work!
+  let dislikedArtists = document.querySelectorAll(".rotate-right");
+  console.log(dislikedArtists);
+  let printThis = "";
+  for (let i = 0; i < dislikedArtists.length; i++) {
+    let disartist = dislikedArtists[i];
+    disartist.classList.remove("rotate-right");
+    disartist.style.display = "block";
+    document.getElementById('dislikeGridContainer').appendChild(disartist);
+  }
+  console.log(printThis);
 }
