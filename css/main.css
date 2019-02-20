@@ -34,9 +34,18 @@ h2,
   color: black;
   font-family: 'Roboto';
   font-size: 1em;
+<<<<<<< HEAD
   <<<<<<< HEAD text-shadow: none !important;
   =======text-shadow: none !important;
   >>>>>>>35185690f8e1772e9dad1c4364c3fcaa9deecded
+=======
+
+  text-shadow: none !important;
+
+     
+     
+
+>>>>>>> 73b348a69309a55d4569bbce9eca1715cbbb1277
 }
 
 h3,
@@ -314,6 +323,18 @@ article.card.active {
   margin-left: 5% !important;
 }
 
+<<<<<<< HEAD
+=======
+
+
+#filter h3 {
+    font-family: 'roboto' !important;
+    text-decoration: underline;
+    font-size: 6vw;    
+    margin-bottom:10px;  
+    font-weight: 100;
+    color:#032936;
+>>>>>>> 73b348a69309a55d4569bbce9eca1715cbbb1277
 
 
 #filter h3 {
@@ -324,6 +345,10 @@ article.card.active {
   font-weight: 100;
   color: #032936;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 73b348a69309a55d4569bbce9eca1715cbbb1277
 
 .mellem {
   margin-top: 25px !important;
@@ -402,17 +427,29 @@ article.card.active {
 #valg {
   width: 100%;
   text-align: center;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 73b348a69309a55d4569bbce9eca1715cbbb1277
   height: 100vh;
   position: fixed;
   z-index: 99999;
   background-color: white;
   background-image: url(../img/background-myfstvl.png);
   text-shadow: none;
+<<<<<<< HEAD
   position: relative;
   z-index: 99999;
   background-color: white;
   background-image: url(../img/background-myfstvl.png);
   text-shadow: none;
+=======
+
+  position: relative;
+ 
+
+
+>>>>>>> 73b348a69309a55d4569bbce9eca1715cbbb1277
 }
 
 #valg a, #filter a {
@@ -433,11 +470,22 @@ article.card.active {
 }
 
 .arrow {
+<<<<<<< HEAD
   <<<<<<< HEAD font-size: 11vw !important;
   padding: 1% !important;
   =======font-size: 8vw !important;
   padding: 1% !important;
   >>>>>>>35185690f8e1772e9dad1c4364c3fcaa9deecded color: white;
+=======
+
+  font-size: 11vw !important;
+  padding: 1% !important;
+
+  font-size: 8vw !important;
+    padding:1% !important;
+
+  color: white;
+>>>>>>> 73b348a69309a55d4569bbce9eca1715cbbb1277
   border: 2px solid white;
 }
 
@@ -447,6 +495,7 @@ article.card.active {
   text-align: center !important;
   height: 100vh !important;
   position: fixed !important;
+<<<<<<< HEAD
   <<<<<<< HEAD top: -55px !important;
   z-index: 99999;
   background-color: white;
@@ -462,6 +511,29 @@ article.card.active {
   width: 100vh;
   height: 100vh;
   >>>>>>>35185690f8e1772e9dad1c4364c3fcaa9deecded
+=======
+  height: 100% !important;
+  top: -55px !important;
+  z-index: 99999;
+ 
+
+     top:0;
+   
+
+
+}
+
+.baggrund{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 10000;
+    width: 100vh; 
+    height:100vh;
+   
+    
+
+>>>>>>> 73b348a69309a55d4569bbce9eca1715cbbb1277
 }
 
 .indhold {
@@ -484,8 +556,18 @@ article.card.active {
 }
 
 .indhold h3 {
+<<<<<<< HEAD
   <<<<<<< HEAD text-align: left !important;
   =======>>>>>>>35185690f8e1772e9dad1c4364c3fcaa9deecded text-decoration: underline !important;
+=======
+
+  text-align: left !important;
+
+  
+
+
+  text-decoration: underline !important;
+>>>>>>> 73b348a69309a55d4569bbce9eca1715cbbb1277
   font-size: 6vw !important;
   font-weight: 100 !important;
   color: #032936 !important;
@@ -513,31 +595,35 @@ article.card.active {
 
 .loginknap {
   border: 2px solid #6DD4CB !important;
-  font-size: 5.5vw !important;
-  padding: 10px 60px !important;
+
   margin-top: 30px !important;
   border-radius: 50px !important;
   color: white !important;
   background-color: #032936 !important;
   font-family: 'Roboto' !important;
   width: 60% !important;
-  margin-left: 20% !important;
+
+margin-left: 20% !important;
+
+
+
 }
 
 .loginknap a {
   color: white;
   background-color: #032936 !important;
-  font-family: lucida sans !important;
-  font-size: 5.5vw !important;
+  font-family: 'roboto' !important;
   text-decoration: none !important;
+
   width: 60% !important;
   text-shadow: none !important;
   color: white !important;
+
 }
 
 .glemt {
   position: absolute !important;
-  bottom: 3% !important;
+  bottom: -6% !important;
   right: 2% !important;
   font-size: 3.3vw !important;
   font-family: 'Roboto' !important;
@@ -548,7 +634,7 @@ article.card.active {
 
 .konto {
   position: absolute !important;
-  bottom: 3% !important;
+  bottom: -6% !important;
   left: 2% !important;
   font-size: 3.3vw !important;
   font-family: 'Roboto' !important;
@@ -614,7 +700,12 @@ article.card.active {
   position: relative;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD #account h2 {
+=======
+
+#account h2 {
+>>>>>>> 73b348a69309a55d4569bbce9eca1715cbbb1277
   margin-bottom: 20px;
   font-size: 7vw;
   text-shadow: none !important;
@@ -624,6 +715,13 @@ article.card.active {
   font-size: 4vw;
   text-decoration: underline;
   margin: 10px 0px;
+<<<<<<< HEAD
+=======
+  padding-top: 10px
+}
+#account h2{
+    font-family: 'roboto';
+>>>>>>> 73b348a69309a55d4569bbce9eca1715cbbb1277
 
   padding-top: 10px=======#account h2 {
     font-family: 'roboto';
@@ -643,6 +741,7 @@ article.card.active {
     color: #032936;
   }
 
+<<<<<<< HEAD
   .profilindhold {
     position: absolute;
     width: 80%;
@@ -650,6 +749,9 @@ article.card.active {
     top: 16%;
     text-align: left;
   }
+=======
+}
+>>>>>>> 73b348a69309a55d4569bbce9eca1715cbbb1277
 
   .dinfestival {
     width: 60px;
@@ -658,6 +760,7 @@ article.card.active {
     margin-bottom: 20px;
   }
 
+<<<<<<< HEAD
   #account input {
     margin: 5px 0px;
     height: 20px !important;
@@ -665,11 +768,29 @@ article.card.active {
 
   =======.dinfestival {
     width: 60px;
+=======
+
+.dinfestival {
+  width: 60px;
+  padding: 5px;
+  background-color: #6DD4CB;
+  margin-bottom: 20px;
+}
+
+#account input {
+  margin: 5px 0px;
+  height: 20px !important;
+}
+
+.dinfestival{
+    width:60px;
+>>>>>>> 73b348a69309a55d4569bbce9eca1715cbbb1277
     padding: 5px;
     background-color: #032936;
     margin-bottom: 20px;
   }
 
+<<<<<<< HEAD
   #account button {
     color: white;
     background-color: #032936 !important;
@@ -683,6 +804,26 @@ article.card.active {
     border-radius: 50px;
     margin-top: 20px;
   }
+=======
+}
+
+
+
+
+#account button {
+  color: white;
+  background-color: #032936 !important;
+  font-family: lucida sans !important;
+  font-size: 4.5vw !important;
+  text-decoration: none !important;
+  width: 60% !important;
+  text-shadow: none !important;
+  color: white !important;
+  left: 20%;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+>>>>>>> 73b348a69309a55d4569bbce9eca1715cbbb1277
 
   #account button a {
     color: white;
