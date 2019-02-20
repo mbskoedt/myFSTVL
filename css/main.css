@@ -1,15 +1,6 @@
-/* ---------- root variables ---------- */
-:root {
-  --green: rgb(38, 76, 89);
-  --light-green: #6dd4cb;
-  --light-grey: #f1f1f4;
-  --text-color-light: #f1f1f1;
-  --text-color-dark: #333;
-}
-
 /* ---------- general styling ---------- */
 html {
-  color: var(--text-color-dark);
+  color: #333;
   height: 100%;
   text-align: center;
   width: 100%;
@@ -29,8 +20,7 @@ h1 {
   color: #032936;
 }
 
-h2,
-  {
+h2 {
   color: black;
   font-family: 'Roboto';
   font-size: 1em;
@@ -48,7 +38,7 @@ h4 {
 p {
   color: black;
   text-align: left;
-  font-family: 'Roboto mono'sans-serif !important;
+  font-family: 'Roboto Mono', sans-serif !important;
   text-shadow: none !important;
 }
 
@@ -92,14 +82,14 @@ p {
 
 /* Change the color of links on hover */
 .tabbar a:hover {
-  background-color: var(--light-grey);
-  color: var(--text-color-dark);
+  background-color: #f1f1f4;
+  color: #333;
 }
 
 /* Add a color to the active/current link */
 .tabbar a.active {
-  background-color: var(--light-green);
-  color: var(--text-color-light);
+  background-color: #6dd4cb;
+  color: #f1f1f1;
 }
 
 .tabbar img {
@@ -175,7 +165,6 @@ p {
   text-shadow: none;
   overflow: auto;
   position: relative;
-  cursor: hand;
   color: #032936;
 }
 
@@ -313,7 +302,7 @@ article.card.active {
 }
 
 #filter h3 {
-  font-family: 'roboto' !important;
+  font-family: 'Roboto' !important;
   text-decoration: underline;
   font-size: 6vw;
   margin-bottom: 10px;
@@ -328,9 +317,10 @@ article.card.active {
 .top-tekst {
   margin-top: 13vh;
   text-shadow: none;
-  font-family: 'roboto';
+  font-family: 'Roboto';
   color: #032936;
-  font-weight: 100;
+  font-size: 6vw;
+  padding-bottom: 20px !important;
 }
 
 #filter p {
@@ -338,7 +328,6 @@ article.card.active {
   position: relative;
   margin-bottom: 30px;
   color: white;
-  font-weight: 00;
   font-size: 5vw;
 }
 
@@ -599,7 +588,7 @@ article.card.active {
 }
 
 #account h2 {
-  font-family: 'roboto';
+  font-family: 'Roboto';
   margin-bottom: 20px;
   font-size: 9vw;
   text-shadow: none !important;
@@ -608,7 +597,7 @@ article.card.active {
 }
 
 #account h3 {
-  font-family: 'roboto' !important;
+  font-family: 'Roboto' !important;
   font-size: 6vw;
   text-decoration: underline;
   margin: 10px 0px;
