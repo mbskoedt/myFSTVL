@@ -444,7 +444,6 @@ article.card.active {
   position: fixed !important;
   top: -55px !important;
   z-index: 99999;
-  background-color: white;
   top: 0;
   z-index: 99999;
 }

@@ -166,26 +166,8 @@ function fetchArtists() {
     })
     .then(function(json) {
       artists = json.artists;
-      appendArtists(artists);
+      appendArtists(json.artists);
     });
-}
-
-///// addblue TIL VALGTE GENRE //////
-
-let buttons = document.querySelectorAll(".button");
-console.log(buttons);
-
-for (let button of buttons) {
-  button.addEventListener("click", function(elem) {
-    console.log(elem);
-    console.log(elem.target.innerText);
-    console.log(elem.target.classList.contains('addblue'));
-    if (elem.target.classList.contains('addblue')) {
-      elem.target.classList.remove('addblue');
-    } else {
-      elem.target.classList.add('addblue');
-    }
-  });
 }
 
 /////// SKRIV ARTISTER m. addblue TIL DOM'en ///////
@@ -272,4 +254,23 @@ function printDislikedArtists() {
     document.getElementById('dislikeGridContainer').appendChild(disartist);
   }
   console.log(printThis);
+}
+
+
+///// addblue TIL VALGTE GENRE //////
+
+let buttons = document.querySelectorAll(".button");
+console.log(buttons);
+
+for (let button of buttons) {
+  button.addEventListener("click", function(elem) {
+    console.log(elem);
+    console.log(elem.target.innerText);
+    console.log(elem.target.classList.contains('addblue'));
+    if (elem.target.classList.contains('addblue')) {
+      elem.target.classList.remove('addblue');
+    } else {
+      elem.target.classList.add('addblue');
+    }
+  });
 }
