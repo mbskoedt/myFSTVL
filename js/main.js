@@ -85,13 +85,13 @@ setDefaultPage();
 
 
 ///// KLIK FOR LIKE //////
-var vidDislike = document.getElementById("dislike");
+let vidDislike = document.getElementById("dislike");
 
 function playVidDislike() {
   vidDislike.play();
 }
 
-var vidLike = document.getElementById("like");
+let vidLike = document.getElementById("like");
 
 function playVidLike() {
   vidLike.play();
