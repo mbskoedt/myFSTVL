@@ -510,25 +510,27 @@ article.card.active {
 
 .loginknap {
   border: 2px solid #6DD4CB !important;
+
   margin-top: 30px !important;
   border-radius: 50px !important;
   color: white !important;
   background-color: #032936 !important;
   font-family: 'Roboto' !important;
   width: 60% !important;
-    margin-left: 20% !important;
+margin-left: 20% !important;
 
 }
 
 .loginknap a {
   color: white;
   background-color: #032936 !important;
-  font-family: lucida sans !important;
+  font-family: 'roboto' !important;
   font-size: 5.5vw !important;
   text-decoration: none !important;
     width: 60% !important;
     text-shadow: none !important;
     color:white !important;
+    font-weight: 400;
 
 }
 
