@@ -1,10 +1,8 @@
 "use strict";
 
-///// GLOBAL VARIABEL //////
-
 let artists = [];
 
-/////// LOGIN PAGE ///////
+// login side
 
 function saveLocalStorage() {
   let email = document.querySelector("#email").value;
@@ -35,10 +33,11 @@ function loadFromStorage() {
 
 }
 
+
+
 loadFromStorage();
 
 
-/////// SINGLE PAGE APL //////
 
 // hide all pages
 function hideAllPages() {
@@ -82,10 +81,10 @@ function setActiveTab(pageId) {
 
 setDefaultPage();
 
-////////// TINDER CARDS ///////////
+////// TINDER CARDS /////////
 
 
-///// klik for like
+///// KLIK FOR LIKE //////
 var vidDislike = document.getElementById("dislike");
 
 function playVidDislike() {
@@ -99,7 +98,7 @@ function playVidLike() {
 }
 
 
-///// swipe function
+//// Swipe function ////
 
 
 //make sure that the DOM is loaded and ready
@@ -136,8 +135,6 @@ function dislike(element) {
   }
 }
 
-//// igangsæt like/dislike
-
 function likeButtonEvent() {
   like($('.card.active'));
 }
@@ -156,8 +153,6 @@ function addSwipeEffect() {
   });
 }
 
-/////// FETCH JSON //////
-
 function fetchArtists() {
   fetch("json/artists.json")
     .then(function(response) {
@@ -165,29 +160,9 @@ function fetchArtists() {
     })
     .then(function(json) {
       artists = json.artists;
-      appendArtists(artists);
+      appendArtists(json.artists);
     });
 }
-
-///// addblue TIL VALGTE GENRE //////
-
-let buttons = document.querySelectorAll(".button");
-console.log(buttons);
-
-for (let button of buttons) {
-  button.addEventListener("click", function(elem) {
-    console.log(elem);
-    console.log(elem.target.innerText);
-    console.log(elem.target.classList.contains('addblue'));
-    if (elem.target.classList.contains('addblue')) {
-      elem.target.classList.remove('addblue');
-    } else {
-      elem.target.classList.add('addblue');
-    }
-  });
-}
-
-/////// SKRIV ARTISTER m. addblue TIL DOM'en ///////
 
 function appendArtists(artists) {
   let buttons = document.querySelectorAll(".button.addblue");
@@ -227,7 +202,7 @@ function appendArtists(artists) {
     } else {
       htmlTemplate += `
        <article class="card">
-               <section id="avatar" style="display: block;">
+               <section id="avatar" style="display: block";>
              <img class="avatar-img" src="${artist.imgurl}">
            <h2>${artist.name}</h2>
            <h3><i>${artist.genre}</i></h3>
@@ -242,8 +217,6 @@ function appendArtists(artists) {
   // add swipe effect after content added
   addSwipeEffect();
 }
-
-////////// SORTER KUNSTNERE EFTER LIKE/DISLIKE //////////
 
 function printLikedArtists() {
   // caution: drop the "new Array" part or it won't work!
@@ -271,4 +244,20 @@ function printDislikedArtists() {
     document.getElementById('dislikeGridContainer').appendChild(disartist);
   }
   console.log(printThis);
+}
+
+let buttons = document.querySelectorAll(".button");
+console.log(buttons);
+
+for (let button of buttons) {
+  button.addEventListener("click", function(elem) {
+    console.log(elem);
+    console.log(elem.target.innerText);
+    console.log(elem.target.classList.contains('addblue'));
+    if (elem.target.classList.contains('addblue')) {
+      elem.target.classList.remove('addblue');
+    } else {
+      elem.target.classList.add('addblue');
+    }
+  });
 }
