@@ -85,14 +85,19 @@ setDefaultPage();
 ////////// TINDER CARDS ///////////
 
 
+<<<<<<< HEAD
 ///// klik for like
 var vidDislike = document.getElementById("dislike");
+=======
+///// KLIK FOR LIKE //////
+let vidDislike = document.getElementById("dislike");
+>>>>>>> 555e91604323262ec1c860c6254f75d19e84f12e
 
 function playVidDislike() {
   vidDislike.play();
 }
 
-var vidLike = document.getElementById("like");
+let vidLike = document.getElementById("like");
 
 function playVidLike() {
   vidLike.play();
