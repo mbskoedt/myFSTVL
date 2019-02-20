@@ -100,6 +100,7 @@ function playVidLike() {
 
 //// Swipe function ////
 
+"use strict";
 
 //make sure that the DOM is loaded and ready
 document.addEventListener("DOMContentLoaded", function() {
@@ -190,7 +191,7 @@ function appendArtists(artists) {
     if (i === 0) {
       htmlTemplate += `
        <article class="card active" style="display: block;">
-               <section id="avatar" style="display: block;">
+               <section id="avatar" style="display: block";>
              <img class="avatar-img" src="${artist.imgurl}">
            <h2>${artist.name}</h2>
            <h3><i>${artist.genre}</i></h3>
