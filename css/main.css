@@ -670,9 +670,5 @@ article.card.active {
 }
 
 .addblue {
-  background-color: blue;
-}
-
-.button:focus {
-  background-color: #6dd4cb !important;
+  background-color: #3ac8c8 !important;
 }
