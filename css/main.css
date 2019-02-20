@@ -26,7 +26,7 @@ h1 {
   font-size: 2em;
   font-weight: 500;
   margin: -1vw;
-    color:#032936;
+  color: #032936;
 }
 
 h2,
@@ -34,12 +34,9 @@ h2,
   color: black;
   font-family: 'Roboto';
   font-size: 1em;
-<<<<<<< HEAD
-  text-shadow: none !important;
-=======
-     text-shadow: none !important;
-     
->>>>>>> 35185690f8e1772e9dad1c4364c3fcaa9deecded
+  <<<<<<< HEAD text-shadow: none !important;
+  =======text-shadow: none !important;
+  >>>>>>>35185690f8e1772e9dad1c4364c3fcaa9deecded
 }
 
 h3,
@@ -79,6 +76,7 @@ p {
   z-index: 9000;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 #hidePage {
@@ -91,6 +89,7 @@ p {
   text-align: center;
   padding: 2%;
   text-decoration: none;
+  width: 23%;
 }
 
 /* Change the color of links on hover */
@@ -103,6 +102,14 @@ p {
 .tabbar a.active {
   background-color: var(--light-green);
   color: var(--text-color-light);
+}
+
+.tabbar img {
+  width: 50px;
+}
+
+#trashcan {
+  width: 58%;
 }
 
 /* ---------- page styling ---------- */
@@ -138,7 +145,7 @@ p {
 .tilbage-knap {
   float: left;
   margin: 20px;
-  width: 10%;
+  width: 35px;
 }
 
 /* ---------- TINDER CARDS ----------- */
@@ -167,11 +174,11 @@ p {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   width: 90%;
-    text-shadow: none;
+  text-shadow: none;
   overflow: auto;
   position: relative;
   cursor: hand;
-    color:#032936;
+  color: #032936;
 }
 
 .card p {
@@ -273,7 +280,16 @@ article.card.active {
 .like-dislike video {
   margin-left: 4vw;
   margin-right: 4vw;
+}
 
+#dislike {
+  width: 100px;
+  height: 108px;
+}
+
+#like {
+  width: 110px;
+  height: 110px;
 }
 
 /* /////////// Filtreringsknapper /////////// */
@@ -289,7 +305,8 @@ article.card.active {
 
 .button {
   width: 30% !important;
-    color:#032936 !important;;
+  color: #032936 !important;
+  ;
 }
 
 .alle {
@@ -297,46 +314,40 @@ article.card.active {
   margin-left: 5% !important;
 }
 
-<<<<<<< HEAD
-#filter {}
-=======
+
+
 #filter h3 {
-    font-family: 'roboto' !important;
-    text-decoration: underline;
-    font-size: 6vw;    
-    margin-bottom:10px;  
-    font-weight: 100;
-    color:#032936;
-
+  font-family: 'roboto' !important;
+  text-decoration: underline;
+  font-size: 6vw;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: #032936;
 }
->>>>>>> 35185690f8e1772e9dad1c4364c3fcaa9deecded
 
-.mellem{
-    margin-top: 25px !important;
+.mellem {
+  margin-top: 25px !important;
 }
 
 .top-tekst {
   margin-top: 13vh;
-    text-shadow:none;
-    font-family: 'roboto';
-    color:#032936;
-    font-weight:100;
-    
+  text-shadow: none;
+  font-family: 'roboto';
+  color: #032936;
+  font-weight: 100;
 }
 
-#filter p{
-    margin-top:0px;
-    position: relative;
-    margin-bottom: 30px;
-    color:white;
-    font-weight:00;
-    font-size: 5vw;
-    
+#filter p {
+  margin-top: 0px;
+  position: relative;
+  margin-bottom: 30px;
+  color: white;
+  font-weight: 00;
+  font-size: 5vw;
 }
 
 #filter p, #filter h2, #filter h3 {
   text-align: center;
-    
 }
 
 #filter .arrow {
@@ -344,12 +355,8 @@ article.card.active {
 }
 
 /* //////// KALENDER //////// */
-/*
-#likeGridContainer {
-  display: grid;
-  grid-template-columns: 100%;
-}
-*/
+
+
 #likedGridContainer .card {
   display: block !important;
 }
@@ -395,23 +402,17 @@ article.card.active {
 #valg {
   width: 100%;
   text-align: center;
-<<<<<<< HEAD
   height: 100vh;
   position: fixed;
   z-index: 99999;
   background-color: white;
   background-image: url(../img/background-myfstvl.png);
   text-shadow: none;
-=======
   position: relative;
-    
-    z-index: 99999;
-    background-color: white;
-    background-image: url(../img/background-myfstvl.png);
-    text-shadow:none;
-
-
->>>>>>> 35185690f8e1772e9dad1c4364c3fcaa9deecded
+  z-index: 99999;
+  background-color: white;
+  background-image: url(../img/background-myfstvl.png);
+  text-shadow: none;
 }
 
 #valg a, #filter a {
@@ -432,14 +433,11 @@ article.card.active {
 }
 
 .arrow {
-<<<<<<< HEAD
-  font-size: 11vw !important;
+  <<<<<<< HEAD font-size: 11vw !important;
   padding: 1% !important;
-=======
-  font-size: 8vw !important;
-    padding:1% !important;
->>>>>>> 35185690f8e1772e9dad1c4364c3fcaa9deecded
-  color: white;
+  =======font-size: 8vw !important;
+  padding: 1% !important;
+  >>>>>>>35185690f8e1772e9dad1c4364c3fcaa9deecded color: white;
   border: 2px solid white;
 }
 
@@ -449,27 +447,21 @@ article.card.active {
   text-align: center !important;
   height: 100vh !important;
   position: fixed !important;
-<<<<<<< HEAD
-  top: -55px !important;
+  <<<<<<< HEAD top: -55px !important;
   z-index: 99999;
   background-color: white;
-=======
-     top:0;
-    z-index:99999;
-
-
+  =======top: 0;
+  z-index: 99999;
 }
 
-.baggrund{
-    position: absolute;
-    top:0;
-    left: 0;
-    z-index: 10000;
-    width: 100vh; 
-    height:100vh;
-   
-    
->>>>>>> 35185690f8e1772e9dad1c4364c3fcaa9deecded
+.baggrund {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100vh;
+  height: 100vh;
+  >>>>>>>35185690f8e1772e9dad1c4364c3fcaa9deecded
 }
 
 .indhold {
@@ -492,13 +484,8 @@ article.card.active {
 }
 
 .indhold h3 {
-<<<<<<< HEAD
-  text-align: left !important;
-=======
-  
-
->>>>>>> 35185690f8e1772e9dad1c4364c3fcaa9deecded
-  text-decoration: underline !important;
+  <<<<<<< HEAD text-align: left !important;
+  =======>>>>>>>35185690f8e1772e9dad1c4364c3fcaa9deecded text-decoration: underline !important;
   font-size: 6vw !important;
   font-weight: 100 !important;
   color: #032936 !important;
@@ -627,8 +614,7 @@ article.card.active {
   position: relative;
 }
 
-<<<<<<< HEAD
-#account h2 {
+<<<<<<< HEAD #account h2 {
   margin-bottom: 20px;
   font-size: 7vw;
   text-shadow: none !important;
@@ -638,90 +624,81 @@ article.card.active {
   font-size: 4vw;
   text-decoration: underline;
   margin: 10px 0px;
-  padding-top: 10px
-=======
-#account h2{
-    font-family: 'roboto';
 
+  padding-top: 10px=======#account h2 {
+    font-family: 'roboto';
     margin-bottom: 20px;
     font-size: 9vw;
     text-shadow: none !important;
     margin-top: 15px;
-    color:#032936;
-}
+    color: #032936;
+  }
 
-#account h3{
+  #account h3 {
     font-family: 'roboto' !important;
     font-size: 6vw;
     text-decoration: underline;
     margin: 10px 0px;
-    padding-top:15px;
-    color:#032936;
+    padding-top: 15px;
+    color: #032936;
+  }
 
->>>>>>> 35185690f8e1772e9dad1c4364c3fcaa9deecded
-}
+  .profilindhold {
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+    top: 16%;
+    text-align: left;
+  }
 
-.profilindhold {
-  position: absolute;
-  width: 80%;
-  margin-left: 10%;
-  top: 16%;
-  text-align: left;
-}
+  .dinfestival {
+    width: 60px;
+    padding: 5px;
+    background-color: #6DD4CB;
+    margin-bottom: 20px;
+  }
 
-<<<<<<< HEAD
-.dinfestival {
-  width: 60px;
-  padding: 5px;
-  background-color: #6DD4CB;
-  margin-bottom: 20px;
-}
+  #account input {
+    margin: 5px 0px;
+    height: 20px !important;
+  }
 
-#account input {
-  margin: 5px 0px;
-  height: 20px !important;
-}
-=======
-.dinfestival{
-    width:60px;
+  =======.dinfestival {
+    width: 60px;
     padding: 5px;
     background-color: #032936;
     margin-bottom: 20px;
+  }
 
-}
+  #account button {
+    color: white;
+    background-color: #032936 !important;
+    font-family: lucida sans !important;
+    font-size: 4.5vw !important;
+    text-decoration: none !important;
+    width: 60% !important;
+    text-shadow: none !important;
+    color: white !important;
+    left: 20%;
+    border-radius: 50px;
+    margin-top: 20px;
+  }
 
+  #account button a {
+    color: white;
+    text-decoration: none;
+  }
 
->>>>>>> 35185690f8e1772e9dad1c4364c3fcaa9deecded
+  .password {
+    font-size: 3.5vw;
+    color: #032936 !important;
+    text-shadow: none;
+  }
 
-#account button {
-  color: white;
-  background-color: #032936 !important;
-  font-family: lucida sans !important;
-  font-size: 4.5vw !important;
-  text-decoration: none !important;
-  width: 60% !important;
-  text-shadow: none !important;
-  color: white !important;
-  left: 20%;
-  border-radius: 50px;
-  margin-top: 20px;
-}
+  .addblue {
+    background-color: blue;
+  }
 
-#account button a {
-  color: white;
-  text-decoration: none;
-}
-
-.password {
-  font-size: 3.5vw;
-  color: #032936 !important;
-  text-shadow: none;
-}
-
-.addblue {
-  background-color: blue;
-}
-
-.button:focus {
-  background-color: #6dd4cb !important;
-}
+  .button:focus {
+    background-color: #6dd4cb !important;
+  }

@@ -18,16 +18,16 @@
   <nav class="tabbar">
     <a href="#home" onclick="showPage('home')" id="hidePage">Home</a>
     <a href="#trash" onclick="showPage('trash'); printDislikedArtists();">
-      <img src="img/trashcan-dislike.png" alt="skraldespand" width=55%;>
+      <img src="img/trashcan-dislike.png" alt="skraldespand" id="trashcan">
     </a>
     <a href="#calender" onclick="showPage('calender'); printLikedArtists();">
-      <img src="img/calendar-like.png" alt="kalender" width=60%;>
+      <img src="img/calendar-like.png" alt="kalender">
     </a>
     <a href="#filter" onclick="showPage('filter')">
-      <img src="img/filter.png" alt="filter" width=60%;>
+      <img src="img/filter.png" alt="filter">
     </a>
     <a href="#account" onclick="showPage('account')">
-      <img src="img/account.png" alt="profil" width=60%;>
+      <img src="img/account.png" alt="profil">
     </a>
   </nav>
 
@@ -100,10 +100,10 @@
 
     <!--///////// LIKE KNAP / DISLIKE ////////////-->
     <div class="like-dislike">
-      <video class="dislike-btn" id="dislike" onclick="playVidDislike(); dislikeButtonEvent();" width=100px height=108px>
+      <video class="dislike-btn" id="dislike" onclick="playVidDislike(); dislikeButtonEvent();">
         <source src="video/dislike.mp4">
       </video>
-      <video class="like-btn" id="like" onclick="playVidLike(); likeButtonEvent();" width=110px height=110px>
+      <video class="like-btn" id="like" onclick="playVidLike(); likeButtonEvent();">
         <source src="video/its-a-match.mp4">
       </video>
     </div>
