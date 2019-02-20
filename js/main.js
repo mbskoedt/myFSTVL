@@ -1,8 +1,10 @@
 "use strict";
 
+///// GLOBAL VARIABEL //////
+
 let artists = [];
 
-// login side
+/////// LOGIN PAGE ///////
 
 function saveLocalStorage() {
   let email = document.querySelector("#email").value;
@@ -33,11 +35,10 @@ function loadFromStorage() {
 
 }
 
-
-
 loadFromStorage();
 
 
+/////// SINGLE PAGE APL //////
 
 // hide all pages
 function hideAllPages() {
@@ -81,26 +82,26 @@ function setActiveTab(pageId) {
 
 setDefaultPage();
 
-////// TINDER CARDS /////////
+////////// TINDER CARDS ///////////
 
 
 ///// KLIK FOR LIKE //////
-var vidDislike = document.getElementById("dislike");
+
+let vidDislike = document.getElementById("dislike");
 
 function playVidDislike() {
   vidDislike.play();
 }
 
-var vidLike = document.getElementById("like");
+let vidLike = document.getElementById("like");
 
 function playVidLike() {
   vidLike.play();
 }
 
 
-//// Swipe function ////
+///// swipe function
 
-"use strict";
 
 //make sure that the DOM is loaded and ready
 document.addEventListener("DOMContentLoaded", function() {
@@ -136,6 +137,8 @@ function dislike(element) {
   }
 }
 
+//// igangsæt like/dislike
+
 function likeButtonEvent() {
   like($('.card.active'));
 }
@@ -154,6 +157,8 @@ function addSwipeEffect() {
   });
 }
 
+/////// FETCH JSON //////
+
 function fetchArtists() {
   fetch("json/artists.json")
     .then(function(response) {
@@ -165,11 +170,8 @@ function fetchArtists() {
     });
 }
 
-<<<<<<< HEAD
 /////// SKRIV ARTISTER m. addblue TIL DOM'en ///////
 
-=======
->>>>>>> bdb3691360f37393b23c12ca13f95b6c2cfc4a7e
 function appendArtists(artists) {
   let buttons = document.querySelectorAll(".button.addblue");
   let filteredArtists = [];
@@ -196,7 +198,7 @@ function appendArtists(artists) {
     if (i === 0) {
       htmlTemplate += `
        <article class="card active" style="display: block;">
-               <section id="avatar" style="display: block";>
+               <section id="avatar" style="display: block;">
              <img class="avatar-img" src="${artist.imgurl}">
            <h2>${artist.name}</h2>
            <h3><i>${artist.genre}</i></h3>
@@ -208,7 +210,7 @@ function appendArtists(artists) {
     } else {
       htmlTemplate += `
        <article class="card">
-               <section id="avatar" style="display: block";>
+               <section id="avatar" style="display: block;">
              <img class="avatar-img" src="${artist.imgurl}">
            <h2>${artist.name}</h2>
            <h3><i>${artist.genre}</i></h3>
@@ -223,6 +225,8 @@ function appendArtists(artists) {
   // add swipe effect after content added
   addSwipeEffect();
 }
+
+////////// SORTER KUNSTNERE EFTER LIKE/DISLIKE //////////
 
 function printLikedArtists() {
   // caution: drop the "new Array" part or it won't work!
@@ -252,12 +256,9 @@ function printDislikedArtists() {
   console.log(printThis);
 }
 
-<<<<<<< HEAD
 
 ///// addblue TIL VALGTE GENRE //////
 
-=======
->>>>>>> bdb3691360f37393b23c12ca13f95b6c2cfc4a7e
 let buttons = document.querySelectorAll(".button");
 console.log(buttons);
 
