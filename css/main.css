@@ -82,7 +82,6 @@ p {
 }
 
 /* Style the links inside the navigation bar */
-
 .tabbar a {
   display: inline-block;
   text-align: center;
@@ -112,7 +111,6 @@ p {
 }
 
 /* ---------- page styling ---------- */
-
 .page {
   background-image: url("../img/background-myfstvl.png");
   display: none;
@@ -149,7 +147,6 @@ p {
 }
 
 /* ---------- TINDER CARDS ----------- */
-
 #swipeContainer {
   background-image: url("../img/background-myfstvl.png");
   width: 100vw;
@@ -294,7 +291,6 @@ article.card.active {
 }
 
 /* /////////// Filtreringsknapper /////////// */
-
 .genre-container,
 .dag-container {
   display: flex;
@@ -355,7 +351,6 @@ article.card.active {
 }
 
 /* //////// KALENDER //////// */
-
 #likedGridContainer .card {
   display: block !important;
 }
@@ -435,8 +430,7 @@ article.card.active {
   border: 2px solid white;
 }
 
-/* /////// LOGIN SIDE ///////// */
-
+/* login side */
 .logpa {
   width: 100% !important;
   text-align: center !important;
@@ -548,8 +542,7 @@ article.card.active {
   text-decoration: none !important;
 }
 
-/* //// FACEBOOK ///// */
-
+/*facebook*/
 .loginBtn {
   box-sizing: border-box !important;
   ;
@@ -601,7 +594,7 @@ article.card.active {
   background-image: linear-gradient(#5B7BD5, #4864B1) !important;
 }
 
-/* /////// MIN PROFIL /////// */
+/* /////// MIN PROFIL SITE /////// */
 #account {
   position: relative;
 }
