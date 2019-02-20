@@ -18,16 +18,16 @@
   <nav class="tabbar">
     <a href="#home" onclick="showPage('home')" id="hidePage">Home</a>
     <a href="#trash" onclick="showPage('trash'); printDislikedArtists();">
-      <img src="img/trashcan-dislike.png" alt="skraldespand" width=55%;>
+      <img src="img/trashcan-dislike.png" alt="skraldespand" id="trashcan">
     </a>
     <a href="#calender" onclick="showPage('calender'); printLikedArtists();">
-      <img src="img/calendar-like.png" alt="kalender" width=60%;>
+      <img src="img/calendar-like.png" alt="kalender">
     </a>
     <a href="#filter" onclick="showPage('filter')">
-      <img src="img/filter.png" alt="filter" width=60%;>
+      <img src="img/filter.png" alt="filter">
     </a>
     <a href="#account" onclick="showPage('account')">
-      <img src="img/account.png" alt="profil" width=60%;>
+      <img src="img/account.png" alt="profil">
     </a>
   </nav>
 
@@ -35,7 +35,7 @@
 
   <!-- login side -->
   <section id="login" class="page">
-   <img class="baggrund" src="img/background-myfstvl.png" alt="baggrund">
+    <img class="baggrund" src="img/background-myfstvl.png" alt="baggrund">
     <div class="logpa">
       <div class="indhold">
 
@@ -81,7 +81,7 @@
       </div>
     </div>
     <button href="#filter" onclick="showPage('filter')" class="arrow">
-      <a href="#filter" onclick="showPage('filter')" >&rarr;</a>
+      <a href="#filter" onclick="showPage('filter')">&rarr;</a>
     </button>
   </section>
 
@@ -100,10 +100,10 @@
 
     <!--///////// LIKE KNAP / DISLIKE ////////////-->
     <div class="like-dislike">
-      <video class="dislike-btn" id="dislike" onclick="playVidDislike(); dislikeButtonEvent();" width=100px height=108px>
+      <video class="dislike-btn" id="dislike" onclick="playVidDislike(); dislikeButtonEvent();">
         <source src="video/dislike.mp4">
       </video>
-      <video class="like-btn" id="like" onclick="playVidLike(); likeButtonEvent();" width=110px height=110px>
+      <video class="like-btn" id="like" onclick="playVidLike(); likeButtonEvent();">
         <source src="video/its-a-match.mp4">
       </video>
     </div>
@@ -115,7 +115,7 @@
       <h1>Har du fortrudt?</h1>
     </header>
     <a href="#home">
-      <img src="img/back-arrow.png" alt="Tilbage Knap" class="tilbage-knap" onclick="showPage('home')" width="40px">
+      <img src="img/back-arrow.png" alt="Tilbage Knap" class="tilbage-knap" onclick="showPage('home')">
     </a>
     <div id="dislikeGridContainer">
     </div>
@@ -127,7 +127,7 @@
       <h1>Kalender</h1>
     </header>
     <a href="#home">
-      <img src="img/back-arrow.png" alt="Tilbage Knap" class="tilbage-knap" onclick="showPage('home')" width="40px">
+      <img src="img/back-arrow.png" alt="Tilbage Knap" class="tilbage-knap" onclick="showPage('home')">
     </a>
     <div id="likeGridContainer">
     </div>
@@ -138,7 +138,7 @@
       <h1>Filter</h1>
     </header>
     <a href="#home">
-      <img src="img/back-arrow.png" alt="Tilbage Knap" class="tilbage-knap" onclick="showPage('home')" width="40px">
+      <img src="img/back-arrow.png" alt="Tilbage Knap" class="tilbage-knap" onclick="showPage('home')">
     </a>
     <h2 class="top-tekst">Indstil dine filtre til netop din musiksmag</h2>
     <h3 class="">Festival:</h3>
@@ -170,7 +170,7 @@
       <h1>Profil</h1>
     </header>
     <a href="#home">
-      <img src="img/back-arrow.png" alt="Tilbage Knap" class="tilbage-knap" onclick="showPage('home')" width="40px">
+      <img src="img/back-arrow.png" alt="Tilbage Knap" class="tilbage-knap" onclick="showPage('home')">
     </a>
     <div class="profilindhold">
       <h2>Min profil</h2>
